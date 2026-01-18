@@ -13,8 +13,8 @@ book:
   page-navigation: true
 
   # Uncomment when ready so "Edit" / "Issue" buttons work properly
-  # site-url: "https://docs.caribdata.org/REPLACE-ME"
-  # repo-url: "https://github.com/REPLACE-ME"
+  site-url: "https://caribdata.github.io/redcap-operations-book/"
+  repo-url: "https://github.com/CaribData/redcap-operations-book"
   repo-actions: [edit, issue]
 
   chapters:
