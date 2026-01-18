@@ -1,0 +1,58 @@
+---
+title: "System Security"
+subtitle: "Security model and risk management"
+author: Ian R Hambleton
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+This section describes the security posture of the UWI REDCap service and the shared responsibilities that underpin it.
+
+Security in REDCap is not a single control or technology. It is a layered model that combines infrastructure protections, application-level safeguards, and institutional governance. Weakness at any one layer can undermine the others.
+
+## Layered security model
+
+The UWI REDCap service operates within three distinct security layers.
+
+At the infrastructure layer, HIPAA Vault provides physical data centre security, operating system hardening, managed firewalls, encrypted network connections, and continuous monitoring. This layer protects the server environment but does not control how REDCap is configured or used.
+
+HIPAA Vault has [GDPR certification](https://www.hipaavault.com/privacy-policy/).
+
+At the application layer, REDCap provides role-based access control, audit logging, data validation, and secure authentication mechanisms. These features govern how users interact with data but depend on correct configuration.
+
+At the institutional layer, UWI defines who may use REDCap, for what purposes, and under what conditions. Policies, training, and administrative oversight sit at this layer and are critical to effective security.
+
+## Authentication and access control
+
+Access to REDCap is granted through individual user accounts. Each account is tied to a specific person and email address and is subject to role-based permissions within projects.
+
+Administrators are responsible for ensuring that access is appropriate, proportionate, and time-limited where necessary. Project managers are responsible for managing access within their own projects.
+
+Shared accounts, excessive permissions, and dormant users represent security risks and should be actively avoided.
+
+## Data protection and privacy
+
+REDCap is designed to support secure data capture, including for sensitive research and operational data. However, the platform does not absolve users or the institution of their data protection responsibilities.
+
+Project teams are responsible for ensuring that their use of REDCap complies with applicable ethics approvals, data protection legislation, and institutional policies.
+
+Administrators should pay particular attention to features that increase exposure risk, such as public surveys, API access, and external modules.
+
+## Email and indirect data exposure
+
+Email is an essential but inherently insecure component of REDCap workflows. While email enables notifications and survey distribution, it should never be used to transmit sensitive data.
+
+Administrators should ensure that project teams understand this limitation and design alerts and invitations accordingly. This is a recurring risk area and merits ongoing attention.
+
+## Incident awareness and response
+
+Not all security incidents are technical breaches. Misconfigured permissions, accidental data exports, or inappropriate sharing can all constitute security events.
+
+When a potential incident is identified, the priority is to contain risk, preserve evidence, and escalate appropriately within institutional governance structures. Documentation of incidents and responses supports learning and accountability.
+
+## Security as an ongoing process
+
+Security is not static. Changes in usage patterns, staffing, or external threats can alter the risk profile of the service over time.
+
+Regular review of user access, project configurations, and system behaviour helps ensure that security controls remain effective and proportionate.

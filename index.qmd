@@ -1,0 +1,35 @@
+---
+title: "REDCap at UWI Cave Hill"
+subtitle: "REDCap Operations Handover Runbook"
+author: Ian R Hambleton
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## What this guide is
+- Audience:
+- Scope:
+
+## What this guide is not
+- REDCap user training:
+- Instrument design tutorials:
+- Statistical/analysis guidance:
+
+## Service ownership and responsibilities
+- Service owner:
+- Technical owner:
+- Front-end support lead:
+- Back-end support lead:
+- Escalation contact(s):
+
+## Where to find official REDCap training and documentation
+- Link(s) to official resources:
+- Local policy links:
+
+## How to use this runbook
+- Common workflows:
+- Where to log changes/incidents:
+
+## Change log
+- YYYY-MM-DD — summary — author

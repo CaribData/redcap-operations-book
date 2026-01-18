@@ -1,0 +1,70 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "REDCap at UWI Cave Hill"
+  subtitle: "Operations & Maintenance Handover Guide"
+  author: "Ian R Hambleton"
+  date: last-modified
+  date-format: "D MMM YYYY"
+  search: true
+  reader-mode: true
+  page-navigation: true
+
+  # Uncomment when ready so "Edit" / "Issue" buttons work properly
+  # site-url: "https://docs.caribdata.org/REPLACE-ME"
+  # repo-url: "https://github.com/REPLACE-ME"
+  repo-actions: [edit, issue]
+
+  chapters:
+    - index.qmd
+    - 01-service.qmd
+
+    - part: "Front-end Ops"
+      chapters:
+        - 10-admin.qmd
+        - 11-support.qmd
+        - 12-email.qmd
+
+    - part: "Back-end Ops"
+      chapters:
+        - 20-maintenance.qmd
+        - 21-backups.qmd
+
+    - part: "Risk and continuity"
+      chapters:
+        - 30-security.qmd
+        - 40-checklists.qmd
+
+    - part: "Appendices"
+      chapters:
+        - 90-templates.qmd
+        - 91-links.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    number-sections: true
+    anchor-sections: true
+    smooth-scroll: true
+    code-fold: true
+    code-tools: true
+    link-external-newwindow: true
+    link-external-icon: true
+
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    colorlinks: true
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false

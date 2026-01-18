@@ -1,0 +1,55 @@
+---
+title: "Useful Checklists"
+subtitle: "Operational checklists and continuity aids"
+author: Ian R Hambleton
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+
+This section provides practical checklists to support continuity of the UWI REDCap service.
+
+The aim is not to replace judgement, but to reduce reliance on memory during routine tasks, staff transitions, or stressful situations.
+
+## Routine operational checks
+
+At regular intervals, administrators should confirm that the service is functioning as expected. This includes checking user access, reviewing recent support requests for patterns, and ensuring that system messages or warnings have not been overlooked.
+
+These checks are especially important in a fixed-capacity hosting environment, where gradual increases in usage may have cumulative effects.
+
+## Pre-upgrade checklist
+
+Before performing a REDCap upgrade, administrators should confirm that:
+
+- the upgrade is justified by feature, bug-fix, or security needs;
+- release notes have been reviewed;
+- a recent server snapshot is available;
+- users have been notified if disruption is expected;
+- testing arrangements are in place where possible.
+
+Skipping preparation increases the risk of avoidable service interruption.
+
+## Post-upgrade checklist
+
+After an upgrade, administrators should verify that core functionality is intact. This includes login, project access, surveys, alerts, and any enabled external modules.
+
+Unexpected behaviour should be investigated promptly, and rollback options considered if stability is compromised.
+
+## Incident response checklist
+
+When something goes wrong, the immediate goals are to stabilise the system, protect data, and communicate clearly.
+
+Administrators should identify whether the issue is user-related, application-level, or infrastructure-level, and escalate accordingly. Actions taken should be documented, even if the resolution is straightforward.
+
+## Staff transition and handover
+
+REDCap continuity depends on more than documentation. When administrative responsibility changes, access credentials, vendor contacts, and institutional knowledge must be deliberately transferred.
+
+This guide is intended to support that process, but it cannot replace structured handover and oversight.
+
+## Periodic review
+
+At least annually, administrators should step back and review whether the service configuration, support model, and governance arrangements still reflect how REDCap is actually being used.
+
+Quiet drift is a common source of operational risk. Periodic review helps bring assumptions back into line with reality.

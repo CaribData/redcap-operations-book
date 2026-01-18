@@ -1,0 +1,61 @@
+---
+title: "Useful Templates"
+subtitle: "Reference templates and standard texts"
+author: Ian R Hambleton
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+This section provides standard text and lightweight templates used in the operation of the UWI REDCap service.
+
+The intent is consistency, not bureaucracy. These templates should be adapted as needed, but deviations should be deliberate.
+
+## Standard service description
+
+The following text may be used in institutional documentation, presentations, or onboarding materials:
+
+“REDCap (Research Electronic Data Capture) is a secure, web-based software platform developed by Vanderbilt University and hosted for The University of the West Indies by CaribData. It is designed to support the collection and management of research and operational data through validated data capture, audit trails, and controlled data export.”
+
+## Suggested REDCap citation text
+
+For use in publications, reports, or methods sections:
+
+*“Data were collected and managed using REDCap electronic data capture tools hosted by CaribData for The University of the West Indies, Cave Hill.”*
+
+Project teams should also include standard REDCap methodological citations as recommended by the REDCap Consortium.
+
+## User account request information
+
+When requesting a new REDCap user account, the following information should be provided:
+
+- Full name  
+- Email address  
+- Institutional affiliation  
+- Intended use of REDCap  
+- Whether the user will join an existing project or request approval for a new project
+
+Providing complete information helps reduce delays in account creation.
+
+## Project request summary (informal)
+
+When requesting approval for a new project, project leads should be prepared to describe:
+
+- the purpose of the project (research, operational, teaching, etc.);
+- the type of data to be collected;
+- whether surveys or public links will be used;
+- whether sensitive or personal data are involved.
+
+This information supports appropriate governance without creating unnecessary administrative burden.
+
+## Change notification text (example)
+
+The following text may be adapted when notifying users of planned maintenance or upgrades:
+
+“A scheduled update to the UWI REDCap system will take place on [date/time]. Short service interruptions may occur during this period. Please ensure that critical work is saved in advance.”
+
+## Incident notification text (example)
+
+Where appropriate, the following wording may be used to communicate service issues:
+
+“We are currently investigating an issue affecting the UWI REDCap service. Updates will be provided as more information becomes available.”

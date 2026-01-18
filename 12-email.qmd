@@ -1,0 +1,42 @@
+---
+title: "REDCap Emails"
+subtitle: "Email use, configuration, and governance"
+author: Ian R Hambleton
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+Email is a fundamental dependency for REDCap, enabling user notifications, survey distribution, and automated alerts. At the same time, it presents governance and security risks that require careful management.
+
+This section documents how email is used within the UWI REDCap service and the principles governing its configuration.
+
+## Role of email in REDCap
+
+REDCap uses email to support core functions such as account creation, password management, survey invitations, reminders, and Alerts & Notifications configured within projects.
+
+While email delivery is essential for normal operation, REDCap does not require a fixed or branded sender address, provided that outbound email routing is correctly configured.
+
+## Universal FROM address considerations
+
+A universal FROM address can provide consistency and simplify mail routing, but it also introduces a dependency on the continued availability of the associated domain and mailbox.
+
+Where a universal FROM address is used, it should be institutionally owned, monitored, and reviewed periodically. Personal or externally funded mailboxes should be avoided.
+
+Changes to the FROM address or SMTP configuration should be treated as service-level changes and tested accordingly.
+
+The REDCap universal email address is: redcap@cavehill.uwi.edu
+
+## Governance and risk management
+
+Email should always be treated as an insecure communication channel. As such, sensitive personal or health data must never be included in email bodies or attachments.
+
+Project-level alerts and survey invitations should reference records using identifiers rather than names, and project teams should be reminded of these constraints during project approval.
+
+These practices align with both Vanderbilt guidance and the security assumptions of the hosting environment.
+
+## Testing and change management
+
+Any change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project.
+
+Email issues are often invisible until users report failures, so short-term monitoring after changes is essential to ensure continuity of service.

@@ -1,0 +1,65 @@
+---
+title: "REDCap Administration"
+subtitle: "Administration of users and projects"
+author: Ian R Hambleton
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+This section describes how user access and REDCap projects are administered for the University of the West Indies (UWI) REDCap service.
+
+Administrative functions are exercised on behalf of the institution. They exist to ensure that REDCap is used appropriately, securely, and in line with licensing, governance, and data protection requirements.
+
+## Administrative role and scope
+
+REDCap administrators (sometimes referred to as “superusers”) are responsible for the configuration and oversight of the REDCap system itself. This role is distinct from that of project managers, who control activity within individual projects.
+
+Administrative responsibilities include user *account management*, *approval of projects and elevated functions*, and *oversight of the project lifecycle*.
+
+## User account management
+
+All user accounts are created and managed centrally. Requests for access are submitted via the designated REDCap support email and should clearly state:
+
+- the user’s affiliation, 
+- intended use of REDCap, 
+- whether they are joining an existing project or proposing a new one.
+
+Administrators are responsible for ensuring that:
+
+- accounts are issued only to identifiable individuals;
+- accounts use appropriate institutional or approved email addresses;
+- access is removed or suspended promptly when affiliation ends;
+- account expiration dates are used where appropriate.
+
+Shared or generic accounts are not permitted, as they undermine auditability and accountability.
+
+## Project creation and approval
+
+New projects require administrative approval before they are created or activated. This step ensures that projects are correctly classified (for example, research versus operational use) and that basic governance expectations are understood by project owners.
+
+Administrators should confirm that project managers understand their responsibilities for user management, data handling, and compliance within their projects.
+
+## Project lifecycle control
+
+Administrators control key transitions in the project lifecycle, including:
+
+- approval of project creation;
+- moving projects from development to production;
+- approval of project copies;
+- archiving of completed or inactive projects;
+- deletion of projects, where permitted by institutional policy.
+
+Project deletion is irreversible and should only occur after confirming data retention and governance requirements.
+
+## Elevated permissions and features
+
+Certain REDCap functions require explicit administrative approval because they introduce additional risk or system-level impact. These include *API access*, *activation of external modules*, *enabling mobile data collection*, and approval of *advanced project features*.
+
+Administrative decisions should follow the principle of least privilege and be documented where appropriate.
+
+## Oversight and routine checks
+
+As part of normal operations, administrators should periodically review user accounts, project status, and system logs to identify inactive users, stalled projects, or unusual patterns of data export or access.
+
+These checks support institutional accountability and reduce the risk of unnoticed misuse.

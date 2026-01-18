@@ -1,0 +1,56 @@
+---
+title: "System Backups"
+subtitle: "Backups, recovery, and data continuity"
+author: Ian R Hambleton
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+This section describes how backups and data recovery are handled for the UWI REDCap service.
+
+Backups are a shared responsibility across infrastructure, application, and project levels. No single mechanism provides complete protection against data loss, and it is important to understand what each layer does — and does not — provide.
+
+## Infrastructure-level backups
+
+HIPAA Vault provides infrastructure-level backups and snapshots as part of its hosting service. These backups are designed to support disaster recovery in the event of server failure, corruption, or major incidents.
+
+Infrastructure backups typically capture the state of the server at a point in time. They are not intended for routine data retrieval or fine-grained restoration of individual records or projects.
+
+Retention periods and recovery windows are finite and governed by the hosting agreement. In the event of contract termination or prolonged service disruption, data availability is time-limited.
+
+## Application-level safeguards in REDCap
+
+REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports.
+
+These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.
+
+## Project-level data exports
+
+Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements.
+
+Regular data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely outside the REDCap environment.
+
+Administrators should remind project owners that REDCap is a live system, not a long-term archival solution.
+
+## Recovery scenarios
+
+Different types of data loss require different responses.
+
+In the case of accidental record deletion or user error, recovery may not be possible unless the project team has retained recent exports.
+
+In the case of system-level failure, administrators may work with HIPAA Vault to restore the server from a recent snapshot. This process restores the system to a previous state and may result in loss of recent changes.
+
+Clear communication with affected users is essential in all recovery scenarios.
+
+## Testing and assurance
+
+While full restoration tests are rare, administrators should periodically review backup arrangements with the hosting provider and confirm that snapshots are being taken as expected.
+
+Understanding backup scope and limitations is a key part of service continuity planning.
+
+## End-of-service considerations
+
+If the REDCap service is migrated, decommissioned, or transferred to another institutional owner, data retrieval timelines become critical.
+
+Project teams should be given clear notice and sufficient time to export their data. After hosting services are terminated, unretrieved data may become permanently inaccessible.

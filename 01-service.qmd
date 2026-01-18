@@ -1,0 +1,61 @@
+---
+title: "REDCap Service Overview"
+subtitle: "A Summary of the Cave Hill REDCap Data Platform"
+author: Ian R Hambleton
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+This document describes the REDCap service operated for The University of the West Indies (UWI), Cave Hill, and the institutional responsibilities associated with its operation.
+
+REDCap is a secure, web-based data capture platform developed and licensed by Vanderbilt University under a non-profit end-user licence agreement. UWI participates in the REDCap Consortium and operates REDCap in accordance with Vanderbilt’s licensing terms, governance expectations, and community standards.
+
+The UWI REDCap instance has been project-managed by the [CaribData project](docs.caribdata.org) and hosted on dedicated infrastructure provided by [HIPAA-Vault](hipaavault.com) .
+
+## What the service provides
+
+The service enables UWI researchers and operational teams to:
+
+- build and manage electronic data collection instruments;
+- deploy surveys and forms for online and offline data capture;
+- manage role-based access to projects and data;
+- maintain full audit trails of data entry, modification, and export;
+- export data to standard statistical packages;
+- support longitudinal, survey-based, and operational projects.
+
+These capabilities align with Vanderbilt’s definition of REDCap as a metadata-driven platform designed to support secure research and operational data workflows at scale.
+
+## Hosting and infrastructure responsibilities
+
+The REDCap application is hosted on dedicated servers managed by HIPAA-Vault under a commercial hosting and support agreement with UWI. Under this arrangement, HIPAA-Vault is responsible for:
+
+- server provisioning and maintenance;
+- operating system patching and upgrades;
+- managed firewalls and network security;
+- infrastructure-level monitoring and incident response;
+- data centre security and availability guarantees.
+
+HIPAA-Vault provides infrastructure services only. Responsibility for REDCap configuration, user management, governance, and compliance remains with UWI and its designated administrators.
+
+## Licensing and support boundaries
+
+Vanderbilt University licenses REDCap software to UWI but does not provide hosting, operational support, or system administration services. Participation in the REDCap Consortium grants access to:
+
+- the REDCap software;
+- documentation and community resources;
+- training materials and videos;
+- peer support via the REDCap community.
+
+All operational responsibility for this instance lies with UWI and its service partners. This distinction is critical when planning support, staffing, and continuity arrangements.
+
+## Service ownership
+
+The REDCap service should be treated as an institutional digital service rather than a project-specific tool. This implies clear ownership for:
+
+- policy and governance;
+- funding and contracts;
+- continuity planning;
+- compliance with data protection and research ethics requirements.
+
+Day-to-day administration and user support are delegated functions within this broader ownership framework.

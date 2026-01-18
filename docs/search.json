@@ -1,0 +1,683 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "REDCap at UWI Cave Hill",
+    "section": "",
+    "text": "0.1 What this guide is",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>REDCap at UWI Cave Hill</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#what-this-guide-is",
+    "href": "index.html#what-this-guide-is",
+    "title": "REDCap at UWI Cave Hill",
+    "section": "",
+    "text": "Audience:\nScope:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>REDCap at UWI Cave Hill</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#what-this-guide-is-not",
+    "href": "index.html#what-this-guide-is-not",
+    "title": "REDCap at UWI Cave Hill",
+    "section": "0.2 What this guide is not",
+    "text": "0.2 What this guide is not\n\nREDCap user training:\nInstrument design tutorials:\nStatistical/analysis guidance:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>REDCap at UWI Cave Hill</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#service-ownership-and-responsibilities",
+    "href": "index.html#service-ownership-and-responsibilities",
+    "title": "REDCap at UWI Cave Hill",
+    "section": "0.3 Service ownership and responsibilities",
+    "text": "0.3 Service ownership and responsibilities\n\nService owner:\nTechnical owner:\nFront-end support lead:\nBack-end support lead:\nEscalation contact(s):",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>REDCap at UWI Cave Hill</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#where-to-find-official-redcap-training-and-documentation",
+    "href": "index.html#where-to-find-official-redcap-training-and-documentation",
+    "title": "REDCap at UWI Cave Hill",
+    "section": "0.4 Where to find official REDCap training and documentation",
+    "text": "0.4 Where to find official REDCap training and documentation\n\nLink(s) to official resources:\nLocal policy links:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>REDCap at UWI Cave Hill</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-runbook",
+    "href": "index.html#how-to-use-this-runbook",
+    "title": "REDCap at UWI Cave Hill",
+    "section": "0.5 How to use this runbook",
+    "text": "0.5 How to use this runbook\n\nCommon workflows:\nWhere to log changes/incidents:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>REDCap at UWI Cave Hill</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#change-log",
+    "href": "index.html#change-log",
+    "title": "REDCap at UWI Cave Hill",
+    "section": "0.6 Change log",
+    "text": "0.6 Change log\n\nYYYY-MM-DD — summary — author",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>REDCap at UWI Cave Hill</span>"
+    ]
+  },
+  {
+    "objectID": "01-service.html",
+    "href": "01-service.html",
+    "title": "2  REDCap Service Overview",
+    "section": "",
+    "text": "2.1 What the service provides\nThis document describes the REDCap service operated for The University of the West Indies (UWI), Cave Hill, and the institutional responsibilities associated with its operation.\nREDCap is a secure, web-based data capture platform developed and licensed by Vanderbilt University under a non-profit end-user licence agreement. UWI participates in the REDCap Consortium and operates REDCap in accordance with Vanderbilt’s licensing terms, governance expectations, and community standards.\nThe UWI REDCap instance has been project-managed by the CaribData project and hosted on dedicated infrastructure provided by HIPAA-Vault .\nThe service enables UWI researchers and operational teams to:\nThese capabilities align with Vanderbilt’s definition of REDCap as a metadata-driven platform designed to support secure research and operational data workflows at scale.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>REDCap Service Overview</span>"
+    ]
+  },
+  {
+    "objectID": "01-service.html#what-the-service-provides",
+    "href": "01-service.html#what-the-service-provides",
+    "title": "2  REDCap Service Overview",
+    "section": "",
+    "text": "build and manage electronic data collection instruments;\ndeploy surveys and forms for online and offline data capture;\nmanage role-based access to projects and data;\nmaintain full audit trails of data entry, modification, and export;\nexport data to standard statistical packages;\nsupport longitudinal, survey-based, and operational projects.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>REDCap Service Overview</span>"
+    ]
+  },
+  {
+    "objectID": "01-service.html#hosting-and-infrastructure-responsibilities",
+    "href": "01-service.html#hosting-and-infrastructure-responsibilities",
+    "title": "2  REDCap Service Overview",
+    "section": "2.2 Hosting and infrastructure responsibilities",
+    "text": "2.2 Hosting and infrastructure responsibilities\nThe REDCap application is hosted on dedicated servers managed by HIPAA-Vault under a commercial hosting and support agreement with UWI. Under this arrangement, HIPAA-Vault is responsible for:\n\nserver provisioning and maintenance;\noperating system patching and upgrades;\nmanaged firewalls and network security;\ninfrastructure-level monitoring and incident response;\ndata centre security and availability guarantees.\n\nHIPAA-Vault provides infrastructure services only. Responsibility for REDCap configuration, user management, governance, and compliance remains with UWI and its designated administrators.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>REDCap Service Overview</span>"
+    ]
+  },
+  {
+    "objectID": "01-service.html#licensing-and-support-boundaries",
+    "href": "01-service.html#licensing-and-support-boundaries",
+    "title": "2  REDCap Service Overview",
+    "section": "2.3 Licensing and support boundaries",
+    "text": "2.3 Licensing and support boundaries\nVanderbilt University licenses REDCap software to UWI but does not provide hosting, operational support, or system administration services. Participation in the REDCap Consortium grants access to:\n\nthe REDCap software;\ndocumentation and community resources;\ntraining materials and videos;\npeer support via the REDCap community.\n\nAll operational responsibility for this instance lies with UWI and its service partners. This distinction is critical when planning support, staffing, and continuity arrangements.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>REDCap Service Overview</span>"
+    ]
+  },
+  {
+    "objectID": "01-service.html#service-ownership",
+    "href": "01-service.html#service-ownership",
+    "title": "2  REDCap Service Overview",
+    "section": "2.4 Service ownership",
+    "text": "2.4 Service ownership\nThe REDCap service should be treated as an institutional digital service rather than a project-specific tool. This implies clear ownership for:\n\npolicy and governance;\nfunding and contracts;\ncontinuity planning;\ncompliance with data protection and research ethics requirements.\n\nDay-to-day administration and user support are delegated functions within this broader ownership framework.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>REDCap Service Overview</span>"
+    ]
+  },
+  {
+    "objectID": "10-admin.html",
+    "href": "10-admin.html",
+    "title": "3  REDCap Administration",
+    "section": "",
+    "text": "3.1 Administrative role and scope\nThis section describes how user access and REDCap projects are administered for the University of the West Indies (UWI) REDCap service.\nAdministrative functions are exercised on behalf of the institution. They exist to ensure that REDCap is used appropriately, securely, and in line with licensing, governance, and data protection requirements.\nREDCap administrators (sometimes referred to as “superusers”) are responsible for the configuration and oversight of the REDCap system itself. This role is distinct from that of project managers, who control activity within individual projects.\nAdministrative responsibilities include user account management, approval of projects and elevated functions, and oversight of the project lifecycle.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>REDCap Administration</span>"
+    ]
+  },
+  {
+    "objectID": "10-admin.html#user-account-management",
+    "href": "10-admin.html#user-account-management",
+    "title": "3  REDCap Administration",
+    "section": "3.2 User account management",
+    "text": "3.2 User account management\nAll user accounts are created and managed centrally. Requests for access are submitted via the designated REDCap support email and should clearly state:\n\nthe user’s affiliation,\nintended use of REDCap,\nwhether they are joining an existing project or proposing a new one.\n\nAdministrators are responsible for ensuring that:\n\naccounts are issued only to identifiable individuals;\naccounts use appropriate institutional or approved email addresses;\naccess is removed or suspended promptly when affiliation ends;\naccount expiration dates are used where appropriate.\n\nShared or generic accounts are not permitted, as they undermine auditability and accountability.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>REDCap Administration</span>"
+    ]
+  },
+  {
+    "objectID": "10-admin.html#project-creation-and-approval",
+    "href": "10-admin.html#project-creation-and-approval",
+    "title": "3  REDCap Administration",
+    "section": "3.3 Project creation and approval",
+    "text": "3.3 Project creation and approval\nNew projects require administrative approval before they are created or activated. This step ensures that projects are correctly classified (for example, research versus operational use) and that basic governance expectations are understood by project owners.\nAdministrators should confirm that project managers understand their responsibilities for user management, data handling, and compliance within their projects.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>REDCap Administration</span>"
+    ]
+  },
+  {
+    "objectID": "10-admin.html#project-lifecycle-control",
+    "href": "10-admin.html#project-lifecycle-control",
+    "title": "3  REDCap Administration",
+    "section": "3.4 Project lifecycle control",
+    "text": "3.4 Project lifecycle control\nAdministrators control key transitions in the project lifecycle, including:\n\napproval of project creation;\nmoving projects from development to production;\napproval of project copies;\narchiving of completed or inactive projects;\ndeletion of projects, where permitted by institutional policy.\n\nProject deletion is irreversible and should only occur after confirming data retention and governance requirements.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>REDCap Administration</span>"
+    ]
+  },
+  {
+    "objectID": "10-admin.html#elevated-permissions-and-features",
+    "href": "10-admin.html#elevated-permissions-and-features",
+    "title": "3  REDCap Administration",
+    "section": "3.5 Elevated permissions and features",
+    "text": "3.5 Elevated permissions and features\nCertain REDCap functions require explicit administrative approval because they introduce additional risk or system-level impact. These include API access, activation of external modules, enabling mobile data collection, and approval of advanced project features.\nAdministrative decisions should follow the principle of least privilege and be documented where appropriate.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>REDCap Administration</span>"
+    ]
+  },
+  {
+    "objectID": "10-admin.html#oversight-and-routine-checks",
+    "href": "10-admin.html#oversight-and-routine-checks",
+    "title": "3  REDCap Administration",
+    "section": "3.6 Oversight and routine checks",
+    "text": "3.6 Oversight and routine checks\nAs part of normal operations, administrators should periodically review user accounts, project status, and system logs to identify inactive users, stalled projects, or unusual patterns of data export or access.\nThese checks support institutional accountability and reduce the risk of unnoticed misuse.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>REDCap Administration</span>"
+    ]
+  },
+  {
+    "objectID": "11-support.html",
+    "href": "11-support.html",
+    "title": "4  Support Requests",
+    "section": "",
+    "text": "4.1 Purpose of local support\nThis section describes how support for the UWI REDCap service is provided, including how requests are handled, triaged, and escalated.\nThe support model reflects the boundaries between REDCap software ownership (Vanderbilt University), local service operation (UWI and CaribData), and infrastructure hosting (HIPAA Vault).\nLocal REDCap support exists to enable effective and appropriate use of the platform. It focuses on helping users apply REDCap functionality correctly rather than providing research design, statistical, or methodological advice.\nSupport activities complement, rather than replace, the extensive documentation and training materials provided by Vanderbilt University.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Support Requests</span>"
+    ]
+  },
+  {
+    "objectID": "11-support.html#types-of-support-requests",
+    "href": "11-support.html#types-of-support-requests",
+    "title": "4  Support Requests",
+    "section": "4.2 Types of support requests",
+    "text": "4.2 Types of support requests\nSupport requests generally fall into three broad categories.\n\n4.2.1 Account and access support\nThese requests relate to user authentication and access, including:\n\npassword resets;\naccount expiration or reactivation;\naccount suspension or deletion;\naccount creation and affiliation changes.\n\nThese are the most common requests and are usually resolved through the REDCap Control Center.\n\n\n4.2.2 Project and permissions support\nThese requests relate to project-level governance and configuration, including:\n\napproval of new projects;\nmoving projects from development to production;\napproving project copies or deletions;\nmanaging user permissions and roles;\napproving API access or external modules.\n\nThese requests require judgement, as they often have governance or data protection implications.\n\n\n4.2.3 Technical and system-related support\nA smaller number of requests involve more technical issues, such as:\n\nsurvey behaviour that appears inconsistent or broken;\nerrors triggered by server security rules;\nmobile app synchronisation issues;\nissues following REDCap version upgrades.\n\nWhere issues relate to infrastructure or server configuration, they are escalated to the hosting provider.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Support Requests</span>"
+    ]
+  },
+  {
+    "objectID": "11-support.html#common-administrative-support-procedures",
+    "href": "11-support.html#common-administrative-support-procedures",
+    "title": "4  Support Requests",
+    "section": "4.3 Common administrative support procedures",
+    "text": "4.3 Common administrative support procedures\nThis section documents the most frequent administrative actions carried out by REDCap administrators in response to user support requests.\nProcedures assume administrator-level access and familiarity with REDCap terminology. They focus on what to do and what to check, rather than UI walkthroughs that may change between REDCap versions.\n\n4.3.1 Resetting a user password\nPassword resets are required when users cannot log in or did not receive their original account email.\nBreadcrumb\nControl Center → Browse Users → (select user) → Reset password / Send password reset email\nProcedure\n\nLocate the user account.\nConfirm the account is active and the email address is correct.\nTrigger a password reset or reset email.\nAdvise the user to check inbox and spam or quarantine folders.\n\nIf the user does not receive the email, verify outbound email configuration and consider institutional mail filtering.\n\n\n4.3.2 Extending or resetting a user account expiration date\nUser accounts may expire automatically based on institutional or administrative policy. Expired accounts prevent login but retain audit history.\nBreadcrumb\nControl Center → Browse Users → (select user) → Edit user settings → Account expiration\nProcedure\n\nLocate the user account.\nEdit the expiration date or remove it where appropriate.\nSave changes and confirm the account is active.\n\nExpiration dates should be applied deliberately and reviewed periodically.\n\n\n4.3.3 Suspending or reactivating a user account\nAccounts may be suspended due to staff changes, temporary inactivity, or security concerns.\nBreadcrumb\nControl Center → Browse Users → (select user) → Suspend user / Reactivate user\nProcedure\n\nChange the account status as required.\nConfirm the updated status has taken effect.\n\nSuspension is reversible and preserves audit history. It is preferred to deletion in most cases.\n\n\n4.3.4 Resending account creation emails\nUsers occasionally report not receiving their initial account creation email.\nBreadcrumb\nControl Center → Browse Users → (select user) → Resend account email\nProcedure\n\nConfirm the account exists and is active.\nVerify the email address.\nResend the account or password email.\nAsk the user to check spam or quarantine folders.\n\nRepeated failures usually indicate email filtering rather than a REDCap issue.\n\n\n4.3.5 Creating a new user account\nNew accounts are created centrally to ensure traceability and appropriate use.\nBreadcrumb\nControl Center → Add New User\nProcedure\n\nEnter the user’s name, email address, and institutional affiliation.\nSet an expiration date if required.\nSave the account and confirm the email notification is sent.\n\nShared or generic accounts should not be created.\n\n\n4.3.6 Approving project creation\nRequests for new projects require administrative approval.\nBreadcrumb\nControl Center → Project requests / Pending project requests → Review request\nProcedure\n\nReview the stated project purpose.\nConfirm whether surveys, public links, API access, or sensitive data are involved.\nApprove or reject the request accordingly.\n\nApproval implies that baseline governance expectations have been communicated.\n\n\n4.3.7 Moving a project to production\nProjects must be reviewed before moving from development to production.\nBreadcrumb (project initiates)\nProject → Setup → Move project to Production\nBreadcrumb (administrator approves)\nControl Center → Pending requests / Production move requests → Approve\nProcedure\n\nConfirm testing is complete.\nVerify that instruments and settings are stable.\nApprove the move and document the action if non-routine.\n\nProduction status has audit and governance implications and should not be reversed lightly.\n\n\n4.3.8 Approving API tokens\nAPI access enables automated data exchange and introduces additional risk.\nBreadcrumb (project initiates)\nProject → Applications → API → Request token\nBreadcrumb (administrator approves)\nControl Center → API token requests → Approve\nProcedure\n\nReview the justification for API access.\nConfirm the requester understands scope and security responsibilities.\nApprove the token if appropriate.\nEncourage least-privilege use and periodic review.\n\n\n\n4.3.9 Activating external modules\nExternal modules extend REDCap functionality but may affect system behaviour.\nBreadcrumb (system level)\nControl Center → External Modules → Manage modules\nBreadcrumb (project level)\nProject → External Modules → Enable module\nProcedure\n\nReview the purpose and documentation of the module.\nConfirm compatibility with the current REDCap version.\nAssess performance and security implications.\nEnable and monitor usage.\n\nNot all modules are appropriate for all installations.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Support Requests</span>"
+    ]
+  },
+  {
+    "objectID": "11-support.html#redcap-control-center-administrator-orientation",
+    "href": "11-support.html#redcap-control-center-administrator-orientation",
+    "title": "4  Support Requests",
+    "section": "4.4 REDCap Control Center: administrator orientation",
+    "text": "4.4 REDCap Control Center: administrator orientation\nThe REDCap Control Center is the primary workspace for system administrators. It provides access to system-wide settings, approvals, and oversight tools.\nAdministrators should understand the structure of the Control Center rather than memorising individual menu items.\n\n4.4.1 Core administrative areas\n\nUser management\nControl Center → Browse Users\nControl Center → Add New User\nProject governance and approvals\nControl Center → Project requests / Pending requests\nSystem configuration\nControl Center → System Configuration / General Configuration\nEmail configuration\nControl Center → Email Configuration\nExternal modules\nControl Center → External Modules\nLogs and audit support\nControl Center → Logging / System logs\n\n\n\n4.4.2 Administrative mindset\nThe Control Center is intentionally powerful. Most changes made here affect all users and projects.\nAdministrators should act conservatively, document non-routine actions, and favour reversible changes wherever possible.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Support Requests</span>"
+    ]
+  },
+  {
+    "objectID": "12-email.html",
+    "href": "12-email.html",
+    "title": "5  REDCap Emails",
+    "section": "",
+    "text": "5.1 Role of email in REDCap\nEmail is a fundamental dependency for REDCap, enabling user notifications, survey distribution, and automated alerts. At the same time, it presents governance and security risks that require careful management.\nThis section documents how email is used within the UWI REDCap service and the principles governing its configuration.\nREDCap uses email to support core functions such as account creation, password management, survey invitations, reminders, and Alerts & Notifications configured within projects.\nWhile email delivery is essential for normal operation, REDCap does not require a fixed or branded sender address, provided that outbound email routing is correctly configured.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>REDCap Emails</span>"
+    ]
+  },
+  {
+    "objectID": "12-email.html#universal-from-address-considerations",
+    "href": "12-email.html#universal-from-address-considerations",
+    "title": "5  REDCap Emails",
+    "section": "5.2 Universal FROM address considerations",
+    "text": "5.2 Universal FROM address considerations\nA universal FROM address can provide consistency and simplify mail routing, but it also introduces a dependency on the continued availability of the associated domain and mailbox.\nWhere a universal FROM address is used, it should be institutionally owned, monitored, and reviewed periodically. Personal or externally funded mailboxes should be avoided.\nChanges to the FROM address or SMTP configuration should be treated as service-level changes and tested accordingly.\nThe REDCap universal email address is: redcap@cavehill.uwi.edu",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>REDCap Emails</span>"
+    ]
+  },
+  {
+    "objectID": "12-email.html#governance-and-risk-management",
+    "href": "12-email.html#governance-and-risk-management",
+    "title": "5  REDCap Emails",
+    "section": "5.3 Governance and risk management",
+    "text": "5.3 Governance and risk management\nEmail should always be treated as an insecure communication channel. As such, sensitive personal or health data must never be included in email bodies or attachments.\nProject-level alerts and survey invitations should reference records using identifiers rather than names, and project teams should be reminded of these constraints during project approval.\nThese practices align with both Vanderbilt guidance and the security assumptions of the hosting environment.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>REDCap Emails</span>"
+    ]
+  },
+  {
+    "objectID": "12-email.html#testing-and-change-management",
+    "href": "12-email.html#testing-and-change-management",
+    "title": "5  REDCap Emails",
+    "section": "5.4 Testing and change management",
+    "text": "5.4 Testing and change management\nAny change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project.\nEmail issues are often invisible until users report failures, so short-term monitoring after changes is essential to ensure continuity of service.",
+    "crumbs": [
+      "Front-end Ops",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>REDCap Emails</span>"
+    ]
+  },
+  {
+    "objectID": "20-maintenance.html",
+    "href": "20-maintenance.html",
+    "title": "6  System Maintenance",
+    "section": "",
+    "text": "6.1 Responsibility boundaries\nThis section describes how routine maintenance and upgrades are managed for the UWI REDCap service.\nThe REDCap application runs on a dedicated Linux virtual machine hosted by HIPAA Vault. This is a fixed-capacity, managed environment. Maintenance activities therefore require coordination between REDCap administrators and the hosting provider and should follow predictable, documented procedures.\nSystem maintenance spans multiple layers, each with a different owner.\nHIPAA Vault is responsible for the underlying infrastructure, including server hardware, operating system patching, firewall management, and network security.\nUWI, through its REDCap administrators, is responsible for the REDCap application itself, including configuration, upgrades, testing, and user communication.\nVanderbilt University provides the REDCap software and documentation but does not perform upgrades, host the system, or provide operational support.\nUnderstanding these boundaries is essential when planning or responding to maintenance activities.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>System Maintenance</span>"
+    ]
+  },
+  {
+    "objectID": "20-maintenance.html#routine-system-checks",
+    "href": "20-maintenance.html#routine-system-checks",
+    "title": "6  System Maintenance",
+    "section": "6.2 Routine system checks",
+    "text": "6.2 Routine system checks\nAdministrators should perform periodic checks to confirm that REDCap is functioning as expected. These checks are typically lightweight and include verifying user access, confirming that surveys and alerts are running, and reviewing system messages or logs for warnings.\nRoutine checks help detect emerging issues early, particularly in a fixed-resource environment where gradual changes in usage can affect performance.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>System Maintenance</span>"
+    ]
+  },
+  {
+    "objectID": "20-maintenance.html#redcap-version-upgrades",
+    "href": "20-maintenance.html#redcap-version-upgrades",
+    "title": "6  System Maintenance",
+    "section": "6.3 REDCap version upgrades",
+    "text": "6.3 REDCap version upgrades\nREDCap releases frequent updates, including feature enhancements, bug fixes, and occasional security patches. UWI policy is to keep the system reasonably up to date while avoiding unnecessary disruption to users.\nUpgrades should be informed by Vanderbilt release notes and changelogs. Not all releases require immediate action, but security-related updates should be prioritised.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>System Maintenance</span>"
+    ]
+  },
+  {
+    "objectID": "20-maintenance.html#pre-upgrade-preparation",
+    "href": "20-maintenance.html#pre-upgrade-preparation",
+    "title": "6  System Maintenance",
+    "section": "6.4 Pre-upgrade preparation",
+    "text": "6.4 Pre-upgrade preparation\nBefore any upgrade, administrators should coordinate with HIPAA Vault to ensure a recent server snapshot is available. This provides a rollback option if the upgrade fails or introduces unexpected behaviour.\nWhere possible, new REDCap versions should be tested on a development or staging environment before being applied to the production system. Testing should focus on core functionality, authentication, surveys, alerts, and any enabled external modules.\nAdministrators should also notify users in advance if an upgrade is expected to cause service interruption.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>System Maintenance</span>"
+    ]
+  },
+  {
+    "objectID": "20-maintenance.html#performing-upgrades",
+    "href": "20-maintenance.html#performing-upgrades",
+    "title": "6  System Maintenance",
+    "section": "6.5 Performing upgrades",
+    "text": "6.5 Performing upgrades\nREDCap upgrades are typically applied by administrators with appropriate access to the server environment. In some cases, HIPAA Vault may assist with server-level changes required to support the upgrade, such as PHP or database adjustments.\nUpgrades should be scheduled during periods of low usage where possible and should be followed immediately by basic functional checks.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>System Maintenance</span>"
+    ]
+  },
+  {
+    "objectID": "20-maintenance.html#post-upgrade-validation",
+    "href": "20-maintenance.html#post-upgrade-validation",
+    "title": "6  System Maintenance",
+    "section": "6.6 Post-upgrade validation",
+    "text": "6.6 Post-upgrade validation\nAfter an upgrade, administrators should confirm that:\n\nusers can log in normally;\nprojects open and behave as expected;\nsurveys and alerts function correctly;\nno unexpected errors appear in logs or system messages.\n\nAny issues should be investigated promptly. If necessary, administrators may revert to the pre-upgrade snapshot in coordination with HIPAA Vault.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>System Maintenance</span>"
+    ]
+  },
+  {
+    "objectID": "20-maintenance.html#unplanned-maintenance-and-incidents",
+    "href": "20-maintenance.html#unplanned-maintenance-and-incidents",
+    "title": "6  System Maintenance",
+    "section": "6.7 Unplanned maintenance and incidents",
+    "text": "6.7 Unplanned maintenance and incidents\nOccasionally, unplanned maintenance may be required in response to security vulnerabilities, system instability, or hosting issues.\nIn such cases, the priority is service stability and data protection. Administrators should document the issue, actions taken, and outcomes, and communicate clearly with users if service availability is affected.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>System Maintenance</span>"
+    ]
+  },
+  {
+    "objectID": "21-backups.html",
+    "href": "21-backups.html",
+    "title": "7  System Backups",
+    "section": "",
+    "text": "7.1 Infrastructure-level backups\nThis section describes how backups and data recovery are handled for the UWI REDCap service.\nBackups are a shared responsibility across infrastructure, application, and project levels. No single mechanism provides complete protection against data loss, and it is important to understand what each layer does — and does not — provide.\nHIPAA Vault provides infrastructure-level backups and snapshots as part of its hosting service. These backups are designed to support disaster recovery in the event of server failure, corruption, or major incidents.\nInfrastructure backups typically capture the state of the server at a point in time. They are not intended for routine data retrieval or fine-grained restoration of individual records or projects.\nRetention periods and recovery windows are finite and governed by the hosting agreement. In the event of contract termination or prolonged service disruption, data availability is time-limited.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>System Backups</span>"
+    ]
+  },
+  {
+    "objectID": "21-backups.html#application-level-safeguards-in-redcap",
+    "href": "21-backups.html#application-level-safeguards-in-redcap",
+    "title": "7  System Backups",
+    "section": "7.2 Application-level safeguards in REDCap",
+    "text": "7.2 Application-level safeguards in REDCap\nREDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports.\nThese features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>System Backups</span>"
+    ]
+  },
+  {
+    "objectID": "21-backups.html#project-level-data-exports",
+    "href": "21-backups.html#project-level-data-exports",
+    "title": "7  System Backups",
+    "section": "7.3 Project-level data exports",
+    "text": "7.3 Project-level data exports\nProject teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements.\nRegular data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely outside the REDCap environment.\nAdministrators should remind project owners that REDCap is a live system, not a long-term archival solution.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>System Backups</span>"
+    ]
+  },
+  {
+    "objectID": "21-backups.html#recovery-scenarios",
+    "href": "21-backups.html#recovery-scenarios",
+    "title": "7  System Backups",
+    "section": "7.4 Recovery scenarios",
+    "text": "7.4 Recovery scenarios\nDifferent types of data loss require different responses.\nIn the case of accidental record deletion or user error, recovery may not be possible unless the project team has retained recent exports.\nIn the case of system-level failure, administrators may work with HIPAA Vault to restore the server from a recent snapshot. This process restores the system to a previous state and may result in loss of recent changes.\nClear communication with affected users is essential in all recovery scenarios.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>System Backups</span>"
+    ]
+  },
+  {
+    "objectID": "21-backups.html#testing-and-assurance",
+    "href": "21-backups.html#testing-and-assurance",
+    "title": "7  System Backups",
+    "section": "7.5 Testing and assurance",
+    "text": "7.5 Testing and assurance\nWhile full restoration tests are rare, administrators should periodically review backup arrangements with the hosting provider and confirm that snapshots are being taken as expected.\nUnderstanding backup scope and limitations is a key part of service continuity planning.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>System Backups</span>"
+    ]
+  },
+  {
+    "objectID": "21-backups.html#end-of-service-considerations",
+    "href": "21-backups.html#end-of-service-considerations",
+    "title": "7  System Backups",
+    "section": "7.6 End-of-service considerations",
+    "text": "7.6 End-of-service considerations\nIf the REDCap service is migrated, decommissioned, or transferred to another institutional owner, data retrieval timelines become critical.\nProject teams should be given clear notice and sufficient time to export their data. After hosting services are terminated, unretrieved data may become permanently inaccessible.",
+    "crumbs": [
+      "Back-end Ops",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>System Backups</span>"
+    ]
+  },
+  {
+    "objectID": "30-security.html",
+    "href": "30-security.html",
+    "title": "8  System Security",
+    "section": "",
+    "text": "8.1 Layered security model\nThis section describes the security posture of the UWI REDCap service and the shared responsibilities that underpin it.\nSecurity in REDCap is not a single control or technology. It is a layered model that combines infrastructure protections, application-level safeguards, and institutional governance. Weakness at any one layer can undermine the others.\nThe UWI REDCap service operates within three distinct security layers.\nAt the infrastructure layer, HIPAA Vault provides physical data centre security, operating system hardening, managed firewalls, encrypted network connections, and continuous monitoring. This layer protects the server environment but does not control how REDCap is configured or used.\nHIPAA Vault has GDPR certification.\nAt the application layer, REDCap provides role-based access control, audit logging, data validation, and secure authentication mechanisms. These features govern how users interact with data but depend on correct configuration.\nAt the institutional layer, UWI defines who may use REDCap, for what purposes, and under what conditions. Policies, training, and administrative oversight sit at this layer and are critical to effective security.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>System Security</span>"
+    ]
+  },
+  {
+    "objectID": "30-security.html#authentication-and-access-control",
+    "href": "30-security.html#authentication-and-access-control",
+    "title": "8  System Security",
+    "section": "8.2 Authentication and access control",
+    "text": "8.2 Authentication and access control\nAccess to REDCap is granted through individual user accounts. Each account is tied to a specific person and email address and is subject to role-based permissions within projects.\nAdministrators are responsible for ensuring that access is appropriate, proportionate, and time-limited where necessary. Project managers are responsible for managing access within their own projects.\nShared accounts, excessive permissions, and dormant users represent security risks and should be actively avoided.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>System Security</span>"
+    ]
+  },
+  {
+    "objectID": "30-security.html#data-protection-and-privacy",
+    "href": "30-security.html#data-protection-and-privacy",
+    "title": "8  System Security",
+    "section": "8.3 Data protection and privacy",
+    "text": "8.3 Data protection and privacy\nREDCap is designed to support secure data capture, including for sensitive research and operational data. However, the platform does not absolve users or the institution of their data protection responsibilities.\nProject teams are responsible for ensuring that their use of REDCap complies with applicable ethics approvals, data protection legislation, and institutional policies.\nAdministrators should pay particular attention to features that increase exposure risk, such as public surveys, API access, and external modules.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>System Security</span>"
+    ]
+  },
+  {
+    "objectID": "30-security.html#email-and-indirect-data-exposure",
+    "href": "30-security.html#email-and-indirect-data-exposure",
+    "title": "8  System Security",
+    "section": "8.4 Email and indirect data exposure",
+    "text": "8.4 Email and indirect data exposure\nEmail is an essential but inherently insecure component of REDCap workflows. While email enables notifications and survey distribution, it should never be used to transmit sensitive data.\nAdministrators should ensure that project teams understand this limitation and design alerts and invitations accordingly. This is a recurring risk area and merits ongoing attention.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>System Security</span>"
+    ]
+  },
+  {
+    "objectID": "30-security.html#incident-awareness-and-response",
+    "href": "30-security.html#incident-awareness-and-response",
+    "title": "8  System Security",
+    "section": "8.5 Incident awareness and response",
+    "text": "8.5 Incident awareness and response\nNot all security incidents are technical breaches. Misconfigured permissions, accidental data exports, or inappropriate sharing can all constitute security events.\nWhen a potential incident is identified, the priority is to contain risk, preserve evidence, and escalate appropriately within institutional governance structures. Documentation of incidents and responses supports learning and accountability.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>System Security</span>"
+    ]
+  },
+  {
+    "objectID": "30-security.html#security-as-an-ongoing-process",
+    "href": "30-security.html#security-as-an-ongoing-process",
+    "title": "8  System Security",
+    "section": "8.6 Security as an ongoing process",
+    "text": "8.6 Security as an ongoing process\nSecurity is not static. Changes in usage patterns, staffing, or external threats can alter the risk profile of the service over time.\nRegular review of user access, project configurations, and system behaviour helps ensure that security controls remain effective and proportionate.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>System Security</span>"
+    ]
+  },
+  {
+    "objectID": "40-checklists.html",
+    "href": "40-checklists.html",
+    "title": "9  Useful Checklists",
+    "section": "",
+    "text": "9.1 Routine operational checks\nThis section provides practical checklists to support continuity of the UWI REDCap service.\nThe aim is not to replace judgement, but to reduce reliance on memory during routine tasks, staff transitions, or stressful situations.\nAt regular intervals, administrators should confirm that the service is functioning as expected. This includes checking user access, reviewing recent support requests for patterns, and ensuring that system messages or warnings have not been overlooked.\nThese checks are especially important in a fixed-capacity hosting environment, where gradual increases in usage may have cumulative effects.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Useful Checklists</span>"
+    ]
+  },
+  {
+    "objectID": "40-checklists.html#pre-upgrade-checklist",
+    "href": "40-checklists.html#pre-upgrade-checklist",
+    "title": "9  Useful Checklists",
+    "section": "9.2 Pre-upgrade checklist",
+    "text": "9.2 Pre-upgrade checklist\nBefore performing a REDCap upgrade, administrators should confirm that:\n\nthe upgrade is justified by feature, bug-fix, or security needs;\nrelease notes have been reviewed;\na recent server snapshot is available;\nusers have been notified if disruption is expected;\ntesting arrangements are in place where possible.\n\nSkipping preparation increases the risk of avoidable service interruption.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Useful Checklists</span>"
+    ]
+  },
+  {
+    "objectID": "40-checklists.html#post-upgrade-checklist",
+    "href": "40-checklists.html#post-upgrade-checklist",
+    "title": "9  Useful Checklists",
+    "section": "9.3 Post-upgrade checklist",
+    "text": "9.3 Post-upgrade checklist\nAfter an upgrade, administrators should verify that core functionality is intact. This includes login, project access, surveys, alerts, and any enabled external modules.\nUnexpected behaviour should be investigated promptly, and rollback options considered if stability is compromised.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Useful Checklists</span>"
+    ]
+  },
+  {
+    "objectID": "40-checklists.html#incident-response-checklist",
+    "href": "40-checklists.html#incident-response-checklist",
+    "title": "9  Useful Checklists",
+    "section": "9.4 Incident response checklist",
+    "text": "9.4 Incident response checklist\nWhen something goes wrong, the immediate goals are to stabilise the system, protect data, and communicate clearly.\nAdministrators should identify whether the issue is user-related, application-level, or infrastructure-level, and escalate accordingly. Actions taken should be documented, even if the resolution is straightforward.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Useful Checklists</span>"
+    ]
+  },
+  {
+    "objectID": "40-checklists.html#staff-transition-and-handover",
+    "href": "40-checklists.html#staff-transition-and-handover",
+    "title": "9  Useful Checklists",
+    "section": "9.5 Staff transition and handover",
+    "text": "9.5 Staff transition and handover\nREDCap continuity depends on more than documentation. When administrative responsibility changes, access credentials, vendor contacts, and institutional knowledge must be deliberately transferred.\nThis guide is intended to support that process, but it cannot replace structured handover and oversight.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Useful Checklists</span>"
+    ]
+  },
+  {
+    "objectID": "40-checklists.html#periodic-review",
+    "href": "40-checklists.html#periodic-review",
+    "title": "9  Useful Checklists",
+    "section": "9.6 Periodic review",
+    "text": "9.6 Periodic review\nAt least annually, administrators should step back and review whether the service configuration, support model, and governance arrangements still reflect how REDCap is actually being used.\nQuiet drift is a common source of operational risk. Periodic review helps bring assumptions back into line with reality.",
+    "crumbs": [
+      "Risk and continuity",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Useful Checklists</span>"
+    ]
+  },
+  {
+    "objectID": "90-templates.html",
+    "href": "90-templates.html",
+    "title": "10  Useful Templates",
+    "section": "",
+    "text": "10.1 Standard service description\nThis section provides standard text and lightweight templates used in the operation of the UWI REDCap service.\nThe intent is consistency, not bureaucracy. These templates should be adapted as needed, but deviations should be deliberate.\nThe following text may be used in institutional documentation, presentations, or onboarding materials:\n“REDCap (Research Electronic Data Capture) is a secure, web-based software platform developed by Vanderbilt University and hosted for The University of the West Indies by CaribData. It is designed to support the collection and management of research and operational data through validated data capture, audit trails, and controlled data export.”",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Useful Templates</span>"
+    ]
+  },
+  {
+    "objectID": "90-templates.html#suggested-redcap-citation-text",
+    "href": "90-templates.html#suggested-redcap-citation-text",
+    "title": "10  Useful Templates",
+    "section": "10.2 Suggested REDCap citation text",
+    "text": "10.2 Suggested REDCap citation text\nFor use in publications, reports, or methods sections:\n“Data were collected and managed using REDCap electronic data capture tools hosted by CaribData for The University of the West Indies, Cave Hill.”\nProject teams should also include standard REDCap methodological citations as recommended by the REDCap Consortium.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Useful Templates</span>"
+    ]
+  },
+  {
+    "objectID": "90-templates.html#user-account-request-information",
+    "href": "90-templates.html#user-account-request-information",
+    "title": "10  Useful Templates",
+    "section": "10.3 User account request information",
+    "text": "10.3 User account request information\nWhen requesting a new REDCap user account, the following information should be provided:\n\nFull name\n\nEmail address\n\nInstitutional affiliation\n\nIntended use of REDCap\n\nWhether the user will join an existing project or request approval for a new project\n\nProviding complete information helps reduce delays in account creation.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Useful Templates</span>"
+    ]
+  },
+  {
+    "objectID": "90-templates.html#project-request-summary-informal",
+    "href": "90-templates.html#project-request-summary-informal",
+    "title": "10  Useful Templates",
+    "section": "10.4 Project request summary (informal)",
+    "text": "10.4 Project request summary (informal)\nWhen requesting approval for a new project, project leads should be prepared to describe:\n\nthe purpose of the project (research, operational, teaching, etc.);\nthe type of data to be collected;\nwhether surveys or public links will be used;\nwhether sensitive or personal data are involved.\n\nThis information supports appropriate governance without creating unnecessary administrative burden.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Useful Templates</span>"
+    ]
+  },
+  {
+    "objectID": "90-templates.html#change-notification-text-example",
+    "href": "90-templates.html#change-notification-text-example",
+    "title": "10  Useful Templates",
+    "section": "10.5 Change notification text (example)",
+    "text": "10.5 Change notification text (example)\nThe following text may be adapted when notifying users of planned maintenance or upgrades:\n“A scheduled update to the UWI REDCap system will take place on [date/time]. Short service interruptions may occur during this period. Please ensure that critical work is saved in advance.”",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Useful Templates</span>"
+    ]
+  },
+  {
+    "objectID": "90-templates.html#incident-notification-text-example",
+    "href": "90-templates.html#incident-notification-text-example",
+    "title": "10  Useful Templates",
+    "section": "10.6 Incident notification text (example)",
+    "text": "10.6 Incident notification text (example)\nWhere appropriate, the following wording may be used to communicate service issues:\n“We are currently investigating an issue affecting the UWI REDCap service. Updates will be provided as more information becomes available.”",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Useful Templates</span>"
+    ]
+  },
+  {
+    "objectID": "91-links.html",
+    "href": "91-links.html",
+    "title": "11  External Links",
+    "section": "",
+    "text": "12\nThis section provides links to authoritative external resources relevant to the UWI REDCap service.\nWhere possible, users and administrators should rely on these sources rather than informal guidance or third-party tutorials.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>External Links</span>"
+    ]
+  },
+  {
+    "objectID": "91-links.html#redcap-consortium-and-documentation",
+    "href": "91-links.html#redcap-consortium-and-documentation",
+    "title": "11  External Links",
+    "section": "12.1 REDCap consortium and documentation",
+    "text": "12.1 REDCap consortium and documentation\n\nREDCap Consortium home: https://projectredcap.org/\nOfficial documentation and resources: https://projectredcap.org/resources/\nHow to cite REDCap: https://projectredcap.org/resources/citations/\nREDCap community (login required): https://redcap.vanderbilt.edu/community/\n\nThese are the primary sources for understanding REDCap functionality, updates, and recommended practices.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>External Links</span>"
+    ]
+  },
+  {
+    "objectID": "91-links.html#redcap-training-materials",
+    "href": "91-links.html#redcap-training-materials",
+    "title": "11  External Links",
+    "section": "12.2 REDCap training materials",
+    "text": "12.2 REDCap training materials\n\nOfficial training videos: https://projectredcap.org/resources/videos/\n\nThese videos provide structured introductions to REDCap concepts, project types, instrument design, and built-in applications. They are the preferred starting point for new users.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>External Links</span>"
+    ]
+  },
+  {
+    "objectID": "91-links.html#uwi-redcap-service-access",
+    "href": "91-links.html#uwi-redcap-service-access",
+    "title": "11  External Links",
+    "section": "12.3 UWI REDCap service access",
+    "text": "12.3 UWI REDCap service access\n\nREDCap login URL: https://caribdata.org/redcap/\nREDCap support contact: redcap@cavehill.uwi.edu\n\nThese are the authoritative access points for the UWI installation.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>External Links</span>"
+    ]
+  },
+  {
+    "objectID": "91-links.html#hosting-and-infrastructure",
+    "href": "91-links.html#hosting-and-infrastructure",
+    "title": "11  External Links",
+    "section": "12.4 Hosting and infrastructure",
+    "text": "12.4 Hosting and infrastructure\n\nHIPAA Vault: https://www.hipaavault.com/\n\nHIPAA Vault provides the hosting infrastructure for the UWI REDCap service. Contractual details and support interactions are managed institutionally.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>External Links</span>"
+    ]
+  },
+  {
+    "objectID": "91-links.html#governance-and-compliance",
+    "href": "91-links.html#governance-and-compliance",
+    "title": "11  External Links",
+    "section": "12.5 Governance and compliance",
+    "text": "12.5 Governance and compliance\nUsers should consult relevant institutional policies and ethics guidance applicable to their work, including data protection, research ethics, and information security policies.\nREDCap is a tool; responsibility for compliant use rests with the institution and its users.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>External Links</span>"
+    ]
+  }
+]

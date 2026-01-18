@@ -1,0 +1,244 @@
+---
+title: "Support Requests"
+subtitle: "User support and operational support model"
+author: Ian R Hambleton
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+This section describes how support for the UWI REDCap service is provided, including how requests are handled, triaged, and escalated.
+
+The support model reflects the boundaries between REDCap software ownership (Vanderbilt University), local service operation (UWI and CaribData), and infrastructure hosting (HIPAA Vault).
+
+## Purpose of local support
+
+Local REDCap support exists to enable effective and appropriate use of the platform. It focuses on helping users apply REDCap functionality correctly rather than providing research design, statistical, or methodological advice.
+
+Support activities complement, rather than replace, the extensive documentation and training materials provided by Vanderbilt University.
+
+## Types of support requests
+
+Support requests generally fall into three broad categories.
+
+### Account and access support
+
+These requests relate to user authentication and access, including:
+
+- password resets;
+- account expiration or reactivation;
+- account suspension or deletion;
+- account creation and affiliation changes.
+
+These are the most common requests and are usually resolved through the REDCap Control Center.
+
+### Project and permissions support
+
+These requests relate to project-level governance and configuration, including:
+
+- approval of new projects;
+- moving projects from development to production;
+- approving project copies or deletions;
+- managing user permissions and roles;
+- approving API access or external modules.
+
+These requests require judgement, as they often have governance or data protection implications.
+
+### Technical and system-related support
+
+A smaller number of requests involve more technical issues, such as:
+
+- survey behaviour that appears inconsistent or broken;
+- errors triggered by server security rules;
+- mobile app synchronisation issues;
+- issues following REDCap version upgrades.
+
+Where issues relate to infrastructure or server configuration, they are escalated to the hosting provider.
+
+---
+
+## Common administrative support procedures
+
+This section documents the most frequent administrative actions carried out by REDCap administrators in response to user support requests.
+
+Procedures assume administrator-level access and familiarity with REDCap terminology. They focus on what to do and what to check, rather than UI walkthroughs that may change between REDCap versions.
+
+### Resetting a user password
+
+Password resets are required when users cannot log in or did not receive their original account email.
+
+**Breadcrumb**  
+`Control Center → Browse Users → (select user) → Reset password / Send password reset email`
+
+**Procedure**
+
+1. Locate the user account.
+2. Confirm the account is active and the email address is correct.
+3. Trigger a password reset or reset email.
+4. Advise the user to check inbox and spam or quarantine folders.
+
+If the user does not receive the email, verify outbound email configuration and consider institutional mail filtering.
+
+### Extending or resetting a user account expiration date
+
+User accounts may expire automatically based on institutional or administrative policy. Expired accounts prevent login but retain audit history.
+
+**Breadcrumb**  
+`Control Center → Browse Users → (select user) → Edit user settings → Account expiration`
+
+**Procedure**
+
+1. Locate the user account.
+2. Edit the expiration date or remove it where appropriate.
+3. Save changes and confirm the account is active.
+
+Expiration dates should be applied deliberately and reviewed periodically.
+
+### Suspending or reactivating a user account
+
+Accounts may be suspended due to staff changes, temporary inactivity, or security concerns.
+
+**Breadcrumb**  
+`Control Center → Browse Users → (select user) → Suspend user / Reactivate user`
+
+**Procedure**
+
+1. Change the account status as required.
+2. Confirm the updated status has taken effect.
+
+Suspension is reversible and preserves audit history. It is preferred to deletion in most cases.
+
+### Resending account creation emails
+
+Users occasionally report not receiving their initial account creation email.
+
+**Breadcrumb**  
+`Control Center → Browse Users → (select user) → Resend account email`
+
+**Procedure**
+
+1. Confirm the account exists and is active.
+2. Verify the email address.
+3. Resend the account or password email.
+4. Ask the user to check spam or quarantine folders.
+
+Repeated failures usually indicate email filtering rather than a REDCap issue.
+
+### Creating a new user account
+
+New accounts are created centrally to ensure traceability and appropriate use.
+
+**Breadcrumb**  
+`Control Center → Add New User`
+
+**Procedure**
+
+1. Enter the user’s name, email address, and institutional affiliation.
+2. Set an expiration date if required.
+3. Save the account and confirm the email notification is sent.
+
+Shared or generic accounts should not be created.
+
+### Approving project creation
+
+Requests for new projects require administrative approval.
+
+**Breadcrumb**  
+`Control Center → Project requests / Pending project requests → Review request`
+
+**Procedure**
+
+1. Review the stated project purpose.
+2. Confirm whether surveys, public links, API access, or sensitive data are involved.
+3. Approve or reject the request accordingly.
+
+Approval implies that baseline governance expectations have been communicated.
+
+### Moving a project to production
+
+Projects must be reviewed before moving from development to production.
+
+**Breadcrumb (project initiates)**  
+`Project → Setup → Move project to Production`
+
+**Breadcrumb (administrator approves)**  
+`Control Center → Pending requests / Production move requests → Approve`
+
+**Procedure**
+
+1. Confirm testing is complete.
+2. Verify that instruments and settings are stable.
+3. Approve the move and document the action if non-routine.
+
+Production status has audit and governance implications and should not be reversed lightly.
+
+### Approving API tokens
+
+API access enables automated data exchange and introduces additional risk.
+
+**Breadcrumb (project initiates)**  
+`Project → Applications → API → Request token`
+
+**Breadcrumb (administrator approves)**  
+`Control Center → API token requests → Approve`
+
+**Procedure**
+
+1. Review the justification for API access.
+2. Confirm the requester understands scope and security responsibilities.
+3. Approve the token if appropriate.
+4. Encourage least-privilege use and periodic review.
+
+### Activating external modules
+
+External modules extend REDCap functionality but may affect system behaviour.
+
+**Breadcrumb (system level)**  
+`Control Center → External Modules → Manage modules`
+
+**Breadcrumb (project level)**  
+`Project → External Modules → Enable module`
+
+**Procedure**
+
+1. Review the purpose and documentation of the module.
+2. Confirm compatibility with the current REDCap version.
+3. Assess performance and security implications.
+4. Enable and monitor usage.
+
+Not all modules are appropriate for all installations.
+
+---
+
+## REDCap Control Center: administrator orientation
+
+The REDCap Control Center is the primary workspace for system administrators. It provides access to system-wide settings, approvals, and oversight tools.
+
+Administrators should understand the structure of the Control Center rather than memorising individual menu items.
+
+### Core administrative areas
+
+- **User management**  
+  `Control Center → Browse Users`  
+  `Control Center → Add New User`
+
+- **Project governance and approvals**  
+  `Control Center → Project requests / Pending requests`
+
+- **System configuration**  
+  `Control Center → System Configuration / General Configuration`
+
+- **Email configuration**  
+  `Control Center → Email Configuration`
+
+- **External modules**  
+  `Control Center → External Modules`
+
+- **Logs and audit support**  
+  `Control Center → Logging / System logs`
+
+### Administrative mindset
+
+The Control Center is intentionally powerful. Most changes made here affect all users and projects.
+
+Administrators should act conservatively, document non-routine actions, and favour reversible changes wherever possible.
