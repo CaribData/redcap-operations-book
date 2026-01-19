@@ -71,3 +71,5 @@ Desktop.ini
 .vscode/
 .idea/
 *.code-workspace
+
+/.quarto/

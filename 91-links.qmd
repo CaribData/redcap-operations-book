@@ -7,7 +7,7 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
-# 
+## Introduction 
 
 This section provides links to authoritative external resources relevant to the UWI REDCap service.
 
@@ -15,34 +15,46 @@ Where possible, users and administrators should rely on these sources rather tha
 
 ## REDCap consortium and documentation
 
-- REDCap Consortium home: https://projectredcap.org/
-- Official documentation and resources: https://projectredcap.org/resources/
-- How to cite REDCap: https://projectredcap.org/resources/citations/
-- REDCap community (login required): https://redcap.vanderbilt.edu/community/
-
 These are the primary sources for understanding REDCap functionality, updates, and recommended practices.
+
+| Description | Link |
+| --- | --- |
+|REDCap Consortium home |[https://projectredcap.org/](https://projectredcap.org/)|
+|Official documentation and resources|[https://projectredcap.org/resources/](https://projectredcap.org/resources/)|
+|How to cite REDCap|[https://projectredcap.org/resources/citations/](https://projectredcap.org/resources/citations/)|
+|REDCap community (login required)| [https://redcap.vanderbilt.edu/community/](https://redcap.vanderbilt.edu/community/)|
+
+
 
 ## REDCap training materials
 
-- Official training videos: https://projectredcap.org/resources/videos/
-
 These videos provide structured introductions to REDCap concepts, project types, instrument design, and built-in applications. They are the preferred starting point for new users.
+
+| Description | Link |
+| --- | --- |
+|Official training videos|[https://projectredcap.org/resources/videos/](https://projectredcap.org/resources/videos/)|
 
 ## UWI REDCap service access
 
-- REDCap login URL: https://caribdata.org/redcap/
-- REDCap support contact: redcap@cavehill.uwi.edu
-
 These are the authoritative access points for the UWI installation.
+
+| Description | Link |
+| --- | --- |
+|REDCap login URL|[https://caribdata.org/redcap/](https://caribdata.org/redcap/|
+|REDCap support contact|[redcap@cavehill.uwi.edu](mailto:redcap@cavehill.uwi.edu)|
+
 
 ## Hosting and infrastructure
 
-- HIPAA Vault: https://www.hipaavault.com/
-
 HIPAA Vault provides the hosting infrastructure for the UWI REDCap service. Contractual details and support interactions are managed institutionally.
+
+| Description | Link |
+| --- | --- |
+|HIPAA Vault|[https://www.hipaavault.com/](https://www.hipaavault.com/)|
+
 
 ## Governance and compliance
 
 Users should consult relevant institutional policies and ethics guidance applicable to their work, including data protection, research ethics, and information security policies.
 
-REDCap is a tool; responsibility for compliant use rests with the institution and its users.
+REDCap is a tool---responsibility for compliant use rests with the institution and its users.

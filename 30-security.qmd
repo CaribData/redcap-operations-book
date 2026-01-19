@@ -1,5 +1,5 @@
 ---
-title: "System Security"
+title: "System Security & Governance"
 subtitle: "Security model and risk management"
 author: Ian R Hambleton
 date: last-modified
@@ -7,7 +7,9 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
-This section describes the security posture of the UWI REDCap service and the shared responsibilities that underpin it.
+## Introduction 
+
+This section describes the security structure of the UWI REDCap service and the shared responsibilities that underpin it. Robust security is a key feature of our system, designed to allow researchers and others to confidently collect and manage individual-level information as part of the research work. 
 
 Security in REDCap is not a single control or technology. It is a layered model that combines infrastructure protections, application-level safeguards, and institutional governance. Weakness at any one layer can undermine the others.
 
@@ -15,13 +17,11 @@ Security in REDCap is not a single control or technology. It is a layered model 
 
 The UWI REDCap service operates within three distinct security layers.
 
-At the infrastructure layer, HIPAA Vault provides physical data centre security, operating system hardening, managed firewalls, encrypted network connections, and continuous monitoring. This layer protects the server environment but does not control how REDCap is configured or used.
+**At the infrastructure layer**, HIPAA Vault provides physical data centre security, operating system hardening, managed firewalls, encrypted network connections, and continuous monitoring. This layer protects the server environment but does not control how REDCap is configured or used. HIPAA Vault has [GDPR certification](https://www.hipaavault.com/privacy-policy/).
 
-HIPAA Vault has [GDPR certification](https://www.hipaavault.com/privacy-policy/).
+**At the application layer**, REDCap provides role-based access control, audit logging, data validation, and secure authentication mechanisms. These features govern how users interact with data but depend on correct configuration. You can read more about the REDCap security features [here](./assets/REDCap-Security-Vanderbilt.pdf).
 
-At the application layer, REDCap provides role-based access control, audit logging, data validation, and secure authentication mechanisms. These features govern how users interact with data but depend on correct configuration.
-
-At the institutional layer, UWI defines who may use REDCap, for what purposes, and under what conditions. Policies, training, and administrative oversight sit at this layer and are critical to effective security.
+**At the institutional layer**, UWI defines who may use REDCap, for what purposes, and under what conditions. Policies, training, and administrative oversight sit at this layer and are critical to effective security.
 
 ## Authentication and access control
 
@@ -29,13 +29,16 @@ Access to REDCap is granted through individual user accounts. Each account is ti
 
 Administrators are responsible for ensuring that access is appropriate, proportionate, and time-limited where necessary. Project managers are responsible for managing access within their own projects.
 
-Shared accounts, excessive permissions, and dormant users represent security risks and should be actively avoided.
+*Shared accounts, excessive permissions, and dormant users represent security risks and should be actively avoided.*
 
 ## Data protection and privacy
 
 REDCap is designed to support secure data capture, including for sensitive research and operational data. However, the platform does not absolve users or the institution of their data protection responsibilities.
 
+:::{.callout-warning} 
+### Project teams are responsible for their own data security
 Project teams are responsible for ensuring that their use of REDCap complies with applicable ethics approvals, data protection legislation, and institutional policies.
+:::
 
 Administrators should pay particular attention to features that increase exposure risk, such as public surveys, API access, and external modules.
 
@@ -56,3 +59,78 @@ When a potential incident is identified, the priority is to contain risk, preser
 Security is not static. Changes in usage patterns, staffing, or external threats can alter the risk profile of the service over time.
 
 Regular review of user access, project configurations, and system behaviour helps ensure that security controls remain effective and proportionate.
+
+## Baseline governance expectations for REDCap projects
+
+Approval of a REDCap project confirms that the project owner understands and accepts the following baseline governance expectations. 
+
+*These governance rules will apply to those researchers collecting identifiable information from human participants.*
+
+### Lawful basis and purpose limitation
+
+You must have a clear and documented lawful basis for collecting and processing personal data (e.g. consent, public task, research in the public interest). Data collected in REDCap must only be used for the stated and approved purpose of the project and not for unrelated activities.
+
+### Data minimisation
+
+Only collect the minimum personal data necessary to achieve the project objectives.
+Avoid collecting identifiable information unless it is strictly required.
+
+### Transparency and participant information
+
+Where personal data are collected from individuals, participants must be provided with appropriate information about:
+
+- what data are being collected;
+- why the data are being collected;
+- how the data will be used;
+- how long the data will be retained;
+- who to contact regarding their data rights.
+
+### Access control and user management
+
+Access to the REDCap project must be limited to authorised users only. Users must be assigned the minimum role and permissions necessary to perform their duties.
+Project owners are responsible for:
+
+- approving user access;
+- removing access when it is no longer required;
+- ensuring users do not share accounts or credentials.
+
+### Data security
+
+REDCap must be used in accordance with institutional security guidance. Project owners must:
+
+- avoid exporting identifiable data unless necessary;
+- store exported data securely (think encryption);
+- never email unencrypted personal data;
+- ensure local copies of data are protected and access-controlled.
+
+### Confidentiality and training
+
+All project users must understand their duty of confidentiality. Users should have completed any required institutional data protection or research ethics training relevant to the project.
+
+### Data quality and auditability
+
+Project owners are responsible for ensuring data are entered accurately and responsibly.
+REDCap audit logs must not be disabled or circumvented. Any data corrections must follow transparent and documented procedures.
+
+### Data retention and deletion
+
+Personal data must not be retained longer than necessary. Project owners must have a plan for:
+
+- data archiving;
+- anonymisation or pseudonymisation where appropriate;
+- secure deletion when the retention period ends.
+
+### Data subject rights
+
+Projects must be capable of supporting data subject rights under GDPR (or the local Data Protection Legislation of their home country), including:
+
+- access to personal data;
+- rectification of inaccurate data;
+- restriction or objection where applicable;
+- erasure, where legally permitted.
+
+Project owners must know how to escalate such requests through institutional channels.
+
+### Incident reporting
+
+Any suspected data breach, loss, or unauthorised access must be reported immediately in accordance with institutional incident response procedures.

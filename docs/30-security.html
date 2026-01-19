@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ian R Hambleton">
-<meta name="dcterms.date" content="2026-01-18">
+<meta name="dcterms.date" content="2026-01-19">
 
-<title>8&nbsp; System Security – REDCap at UWI Cave Hill</title>
+<title>8&nbsp; System Security &amp; Governance – REDCap at UWI Cave Hill</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./30-security.html">Risk and continuity</a></li><li class="breadcrumb-item"><a href="./30-security.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./30-security.html">Risk and continuity</a></li><li class="breadcrumb-item"><a href="./30-security.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security &amp; Governance</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -163,7 +163,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-service.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">REDCap Service Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The REDCap Service Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -178,13 +178,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./10-admin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration Overview</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-support.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Support Requests</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Types of Administrative Requests</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./30-security.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security &amp; Governance</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -270,12 +270,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#layered-security-model" id="toc-layered-security-model" class="nav-link active" data-scroll-target="#layered-security-model"><span class="header-section-number">8.1</span> Layered security model</a></li>
-  <li><a href="#authentication-and-access-control" id="toc-authentication-and-access-control" class="nav-link" data-scroll-target="#authentication-and-access-control"><span class="header-section-number">8.2</span> Authentication and access control</a></li>
-  <li><a href="#data-protection-and-privacy" id="toc-data-protection-and-privacy" class="nav-link" data-scroll-target="#data-protection-and-privacy"><span class="header-section-number">8.3</span> Data protection and privacy</a></li>
-  <li><a href="#email-and-indirect-data-exposure" id="toc-email-and-indirect-data-exposure" class="nav-link" data-scroll-target="#email-and-indirect-data-exposure"><span class="header-section-number">8.4</span> Email and indirect data exposure</a></li>
-  <li><a href="#incident-awareness-and-response" id="toc-incident-awareness-and-response" class="nav-link" data-scroll-target="#incident-awareness-and-response"><span class="header-section-number">8.5</span> Incident awareness and response</a></li>
-  <li><a href="#security-as-an-ongoing-process" id="toc-security-as-an-ongoing-process" class="nav-link" data-scroll-target="#security-as-an-ongoing-process"><span class="header-section-number">8.6</span> Security as an ongoing process</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">8.1</span> Introduction</a></li>
+  <li><a href="#layered-security-model" id="toc-layered-security-model" class="nav-link" data-scroll-target="#layered-security-model"><span class="header-section-number">8.2</span> Layered security model</a></li>
+  <li><a href="#authentication-and-access-control" id="toc-authentication-and-access-control" class="nav-link" data-scroll-target="#authentication-and-access-control"><span class="header-section-number">8.3</span> Authentication and access control</a></li>
+  <li><a href="#data-protection-and-privacy" id="toc-data-protection-and-privacy" class="nav-link" data-scroll-target="#data-protection-and-privacy"><span class="header-section-number">8.4</span> Data protection and privacy</a></li>
+  <li><a href="#email-and-indirect-data-exposure" id="toc-email-and-indirect-data-exposure" class="nav-link" data-scroll-target="#email-and-indirect-data-exposure"><span class="header-section-number">8.5</span> Email and indirect data exposure</a></li>
+  <li><a href="#incident-awareness-and-response" id="toc-incident-awareness-and-response" class="nav-link" data-scroll-target="#incident-awareness-and-response"><span class="header-section-number">8.6</span> Incident awareness and response</a></li>
+  <li><a href="#security-as-an-ongoing-process" id="toc-security-as-an-ongoing-process" class="nav-link" data-scroll-target="#security-as-an-ongoing-process"><span class="header-section-number">8.7</span> Security as an ongoing process</a></li>
+  <li><a href="#baseline-governance-expectations-for-redcap-projects" id="toc-baseline-governance-expectations-for-redcap-projects" class="nav-link" data-scroll-target="#baseline-governance-expectations-for-redcap-projects"><span class="header-section-number">8.8</span> Baseline governance expectations for REDCap projects</a>
+  <ul class="collapse">
+  <li><a href="#lawful-basis-and-purpose-limitation" id="toc-lawful-basis-and-purpose-limitation" class="nav-link" data-scroll-target="#lawful-basis-and-purpose-limitation"><span class="header-section-number">8.8.1</span> Lawful basis and purpose limitation</a></li>
+  <li><a href="#data-minimisation" id="toc-data-minimisation" class="nav-link" data-scroll-target="#data-minimisation"><span class="header-section-number">8.8.2</span> Data minimisation</a></li>
+  <li><a href="#transparency-and-participant-information" id="toc-transparency-and-participant-information" class="nav-link" data-scroll-target="#transparency-and-participant-information"><span class="header-section-number">8.8.3</span> Transparency and participant information</a></li>
+  <li><a href="#access-control-and-user-management" id="toc-access-control-and-user-management" class="nav-link" data-scroll-target="#access-control-and-user-management"><span class="header-section-number">8.8.4</span> Access control and user management</a></li>
+  <li><a href="#data-security" id="toc-data-security" class="nav-link" data-scroll-target="#data-security"><span class="header-section-number">8.8.5</span> Data security</a></li>
+  <li><a href="#confidentiality-and-training" id="toc-confidentiality-and-training" class="nav-link" data-scroll-target="#confidentiality-and-training"><span class="header-section-number">8.8.6</span> Confidentiality and training</a></li>
+  <li><a href="#data-quality-and-auditability" id="toc-data-quality-and-auditability" class="nav-link" data-scroll-target="#data-quality-and-auditability"><span class="header-section-number">8.8.7</span> Data quality and auditability</a></li>
+  <li><a href="#data-retention-and-deletion" id="toc-data-retention-and-deletion" class="nav-link" data-scroll-target="#data-retention-and-deletion"><span class="header-section-number">8.8.8</span> Data retention and deletion</a></li>
+  <li><a href="#data-subject-rights" id="toc-data-subject-rights" class="nav-link" data-scroll-target="#data-subject-rights"><span class="header-section-number">8.8.9</span> Data subject rights</a></li>
+  <li><a href="#incident-reporting" id="toc-incident-reporting" class="nav-link" data-scroll-target="#incident-reporting"><span class="header-section-number">8.8.10</span> Incident reporting</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/CaribData/redcap-operations-book/edit/main/30-security.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CaribData/redcap-operations-book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
 </nav>
@@ -286,9 +300,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./30-security.html">Risk and continuity</a></li><li class="breadcrumb-item"><a href="./30-security.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./30-security.html">Risk and continuity</a></li><li class="breadcrumb-item"><a href="./30-security.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security &amp; Governance</span></a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security &amp; Governance</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Security model and risk management</p>
 </div>
 
@@ -306,7 +320,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 Jan 2026</p>
+      <p class="date">19 Jan 2026</p>
     </div>
   </div>
   
@@ -318,46 +332,135 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This section describes the security posture of the UWI REDCap service and the shared responsibilities that underpin it.</p>
+<section id="introduction" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">8.1</span> Introduction</h2>
+<p>This section describes the security structure of the UWI REDCap service and the shared responsibilities that underpin it. Robust security is a key feature of our system, designed to allow researchers and others to confidently collect and manage individual-level information as part of the research work.</p>
 <p>Security in REDCap is not a single control or technology. It is a layered model that combines infrastructure protections, application-level safeguards, and institutional governance. Weakness at any one layer can undermine the others.</p>
-<section id="layered-security-model" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="layered-security-model"><span class="header-section-number">8.1</span> Layered security model</h2>
-<p>The UWI REDCap service operates within three distinct security layers.</p>
-<p>At the infrastructure layer, HIPAA Vault provides physical data centre security, operating system hardening, managed firewalls, encrypted network connections, and continuous monitoring. This layer protects the server environment but does not control how REDCap is configured or used.</p>
-<p>HIPAA Vault has <a href="https://www.hipaavault.com/privacy-policy/">GDPR certification</a>.</p>
-<p>At the application layer, REDCap provides role-based access control, audit logging, data validation, and secure authentication mechanisms. These features govern how users interact with data but depend on correct configuration.</p>
-<p>At the institutional layer, UWI defines who may use REDCap, for what purposes, and under what conditions. Policies, training, and administrative oversight sit at this layer and are critical to effective security.</p>
 </section>
-<section id="authentication-and-access-control" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="authentication-and-access-control"><span class="header-section-number">8.2</span> Authentication and access control</h2>
+<section id="layered-security-model" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="layered-security-model"><span class="header-section-number">8.2</span> Layered security model</h2>
+<p>The UWI REDCap service operates within three distinct security layers.</p>
+<p><strong>At the infrastructure layer</strong>, HIPAA Vault provides physical data centre security, operating system hardening, managed firewalls, encrypted network connections, and continuous monitoring. This layer protects the server environment but does not control how REDCap is configured or used. HIPAA Vault has <a href="https://www.hipaavault.com/privacy-policy/">GDPR certification</a>.</p>
+<p><strong>At the application layer</strong>, REDCap provides role-based access control, audit logging, data validation, and secure authentication mechanisms. These features govern how users interact with data but depend on correct configuration. You can read more about the REDCap security features <a href="./assets/REDCap-Security-Vanderbilt.pdf">here</a>.</p>
+<p><strong>At the institutional layer</strong>, UWI defines who may use REDCap, for what purposes, and under what conditions. Policies, training, and administrative oversight sit at this layer and are critical to effective security.</p>
+</section>
+<section id="authentication-and-access-control" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="authentication-and-access-control"><span class="header-section-number">8.3</span> Authentication and access control</h2>
 <p>Access to REDCap is granted through individual user accounts. Each account is tied to a specific person and email address and is subject to role-based permissions within projects.</p>
 <p>Administrators are responsible for ensuring that access is appropriate, proportionate, and time-limited where necessary. Project managers are responsible for managing access within their own projects.</p>
-<p>Shared accounts, excessive permissions, and dormant users represent security risks and should be actively avoided.</p>
+<p><em>Shared accounts, excessive permissions, and dormant users represent security risks and should be actively avoided.</em></p>
 </section>
-<section id="data-protection-and-privacy" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="data-protection-and-privacy"><span class="header-section-number">8.3</span> Data protection and privacy</h2>
+<section id="data-protection-and-privacy" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="data-protection-and-privacy"><span class="header-section-number">8.4</span> Data protection and privacy</h2>
 <p>REDCap is designed to support secure data capture, including for sensitive research and operational data. However, the platform does not absolve users or the institution of their data protection responsibilities.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Project teams are responsible for their own data security
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Project teams are responsible for ensuring that their use of REDCap complies with applicable ethics approvals, data protection legislation, and institutional policies.</p>
+</div>
+</div>
 <p>Administrators should pay particular attention to features that increase exposure risk, such as public surveys, API access, and external modules.</p>
 </section>
-<section id="email-and-indirect-data-exposure" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="email-and-indirect-data-exposure"><span class="header-section-number">8.4</span> Email and indirect data exposure</h2>
+<section id="email-and-indirect-data-exposure" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="email-and-indirect-data-exposure"><span class="header-section-number">8.5</span> Email and indirect data exposure</h2>
 <p>Email is an essential but inherently insecure component of REDCap workflows. While email enables notifications and survey distribution, it should never be used to transmit sensitive data.</p>
 <p>Administrators should ensure that project teams understand this limitation and design alerts and invitations accordingly. This is a recurring risk area and merits ongoing attention.</p>
 </section>
-<section id="incident-awareness-and-response" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="incident-awareness-and-response"><span class="header-section-number">8.5</span> Incident awareness and response</h2>
+<section id="incident-awareness-and-response" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="incident-awareness-and-response"><span class="header-section-number">8.6</span> Incident awareness and response</h2>
 <p>Not all security incidents are technical breaches. Misconfigured permissions, accidental data exports, or inappropriate sharing can all constitute security events.</p>
 <p>When a potential incident is identified, the priority is to contain risk, preserve evidence, and escalate appropriately within institutional governance structures. Documentation of incidents and responses supports learning and accountability.</p>
 </section>
-<section id="security-as-an-ongoing-process" class="level2" data-number="8.6">
-<h2 data-number="8.6" class="anchored" data-anchor-id="security-as-an-ongoing-process"><span class="header-section-number">8.6</span> Security as an ongoing process</h2>
+<section id="security-as-an-ongoing-process" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="security-as-an-ongoing-process"><span class="header-section-number">8.7</span> Security as an ongoing process</h2>
 <p>Security is not static. Changes in usage patterns, staffing, or external threats can alter the risk profile of the service over time.</p>
 <p>Regular review of user access, project configurations, and system behaviour helps ensure that security controls remain effective and proportionate.</p>
+</section>
+<section id="baseline-governance-expectations-for-redcap-projects" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="baseline-governance-expectations-for-redcap-projects"><span class="header-section-number">8.8</span> Baseline governance expectations for REDCap projects</h2>
+<p>Approval of a REDCap project confirms that the project owner understands and accepts the following baseline governance expectations.</p>
+<p><em>These governance rules will apply to those researchers collecting identifiable information from human participants.</em></p>
+<section id="lawful-basis-and-purpose-limitation" class="level3" data-number="8.8.1">
+<h3 data-number="8.8.1" class="anchored" data-anchor-id="lawful-basis-and-purpose-limitation"><span class="header-section-number">8.8.1</span> Lawful basis and purpose limitation</h3>
+<p>You must have a clear and documented lawful basis for collecting and processing personal data (e.g.&nbsp;consent, public task, research in the public interest). Data collected in REDCap must only be used for the stated and approved purpose of the project and not for unrelated activities.</p>
+</section>
+<section id="data-minimisation" class="level3" data-number="8.8.2">
+<h3 data-number="8.8.2" class="anchored" data-anchor-id="data-minimisation"><span class="header-section-number">8.8.2</span> Data minimisation</h3>
+<p>Only collect the minimum personal data necessary to achieve the project objectives. Avoid collecting identifiable information unless it is strictly required.</p>
+</section>
+<section id="transparency-and-participant-information" class="level3" data-number="8.8.3">
+<h3 data-number="8.8.3" class="anchored" data-anchor-id="transparency-and-participant-information"><span class="header-section-number">8.8.3</span> Transparency and participant information</h3>
+<p>Where personal data are collected from individuals, participants must be provided with appropriate information about:</p>
+<ul>
+<li>what data are being collected;</li>
+<li>why the data are being collected;</li>
+<li>how the data will be used;</li>
+<li>how long the data will be retained;</li>
+<li>who to contact regarding their data rights.</li>
+</ul>
+</section>
+<section id="access-control-and-user-management" class="level3" data-number="8.8.4">
+<h3 data-number="8.8.4" class="anchored" data-anchor-id="access-control-and-user-management"><span class="header-section-number">8.8.4</span> Access control and user management</h3>
+<p>Access to the REDCap project must be limited to authorised users only. Users must be assigned the minimum role and permissions necessary to perform their duties. Project owners are responsible for:</p>
+<ul>
+<li>approving user access;</li>
+<li>removing access when it is no longer required;</li>
+<li>ensuring users do not share accounts or credentials.</li>
+</ul>
+</section>
+<section id="data-security" class="level3" data-number="8.8.5">
+<h3 data-number="8.8.5" class="anchored" data-anchor-id="data-security"><span class="header-section-number">8.8.5</span> Data security</h3>
+<p>REDCap must be used in accordance with institutional security guidance. Project owners must:</p>
+<ul>
+<li>avoid exporting identifiable data unless necessary;</li>
+<li>store exported data securely (think encryption);</li>
+<li>never email unencrypted personal data;</li>
+<li>ensure local copies of data are protected and access-controlled.</li>
+</ul>
+</section>
+<section id="confidentiality-and-training" class="level3" data-number="8.8.6">
+<h3 data-number="8.8.6" class="anchored" data-anchor-id="confidentiality-and-training"><span class="header-section-number">8.8.6</span> Confidentiality and training</h3>
+<p>All project users must understand their duty of confidentiality. Users should have completed any required institutional data protection or research ethics training relevant to the project.</p>
+</section>
+<section id="data-quality-and-auditability" class="level3" data-number="8.8.7">
+<h3 data-number="8.8.7" class="anchored" data-anchor-id="data-quality-and-auditability"><span class="header-section-number">8.8.7</span> Data quality and auditability</h3>
+<p>Project owners are responsible for ensuring data are entered accurately and responsibly. REDCap audit logs must not be disabled or circumvented. Any data corrections must follow transparent and documented procedures.</p>
+</section>
+<section id="data-retention-and-deletion" class="level3" data-number="8.8.8">
+<h3 data-number="8.8.8" class="anchored" data-anchor-id="data-retention-and-deletion"><span class="header-section-number">8.8.8</span> Data retention and deletion</h3>
+<p>Personal data must not be retained longer than necessary. Project owners must have a plan for:</p>
+<ul>
+<li>data archiving;</li>
+<li>anonymisation or pseudonymisation where appropriate;</li>
+<li>secure deletion when the retention period ends.</li>
+</ul>
+</section>
+<section id="data-subject-rights" class="level3" data-number="8.8.9">
+<h3 data-number="8.8.9" class="anchored" data-anchor-id="data-subject-rights"><span class="header-section-number">8.8.9</span> Data subject rights</h3>
+<p>Projects must be capable of supporting data subject rights under GDPR (or the local Data Protection Legislation of their home country), including:</p>
+<ul>
+<li>access to personal data;</li>
+<li>rectification of inaccurate data;</li>
+<li>restriction or objection where applicable;</li>
+<li>erasure, where legally permitted.</li>
+</ul>
+<p>Project owners must know how to escalate such requests through institutional channels.</p>
+</section>
+<section id="incident-reporting" class="level3" data-number="8.8.10">
+<h3 data-number="8.8.10" class="anchored" data-anchor-id="incident-reporting"><span class="header-section-number">8.8.10</span> Incident reporting</h3>
+<p>Any suspected data breach, loss, or unauthorised access must be reported immediately in accordance with institutional incident response procedures.</p>
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -832,7 +935,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "System Security"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "System Security &amp; Governance"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Security model and risk management"</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> Ian R Hambleton</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
@@ -840,21 +943,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This section describes the security posture of the UWI REDCap service and the shared responsibilities that underpin it.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction </span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Security in REDCap is not a single control or technology. It is a layered model that combines infrastructure protections, application-level safeguards, and institutional governance. Weakness at any one layer can undermine the others.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>This section describes the security structure of the UWI REDCap service and the shared responsibilities that underpin it. Robust security is a key feature of our system, designed to allow researchers and others to confidently collect and manage individual-level information as part of the research work. </span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Layered security model</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Security in REDCap is not a single control or technology. It is a layered model that combines infrastructure protections, application-level safeguards, and institutional governance. Weakness at any one layer can undermine the others.</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>The UWI REDCap service operates within three distinct security layers.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Layered security model</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>At the infrastructure layer, HIPAA Vault provides physical data centre security, operating system hardening, managed firewalls, encrypted network connections, and continuous monitoring. This layer protects the server environment but does not control how REDCap is configured or used.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>The UWI REDCap service operates within three distinct security layers.</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>HIPAA Vault has <span class="co">[</span><span class="ot">GDPR certification</span><span class="co">](https://www.hipaavault.com/privacy-policy/)</span>.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>**At the infrastructure layer**, HIPAA Vault provides physical data centre security, operating system hardening, managed firewalls, encrypted network connections, and continuous monitoring. This layer protects the server environment but does not control how REDCap is configured or used. HIPAA Vault has <span class="co">[</span><span class="ot">GDPR certification</span><span class="co">](https://www.hipaavault.com/privacy-policy/)</span>.</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>At the application layer, REDCap provides role-based access control, audit logging, data validation, and secure authentication mechanisms. These features govern how users interact with data but depend on correct configuration.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>**At the application layer**, REDCap provides role-based access control, audit logging, data validation, and secure authentication mechanisms. These features govern how users interact with data but depend on correct configuration. You can read more about the REDCap security features <span class="co">[</span><span class="ot">here</span><span class="co">](./assets/REDCap-Security-Vanderbilt.pdf)</span>.</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>At the institutional layer, UWI defines who may use REDCap, for what purposes, and under what conditions. Policies, training, and administrative oversight sit at this layer and are critical to effective security.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>**At the institutional layer**, UWI defines who may use REDCap, for what purposes, and under what conditions. Policies, training, and administrative oversight sit at this layer and are critical to effective security.</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Authentication and access control</span></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
@@ -862,33 +965,111 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>Administrators are responsible for ensuring that access is appropriate, proportionate, and time-limited where necessary. Project managers are responsible for managing access within their own projects.</span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>Shared accounts, excessive permissions, and dormant users represent security risks and should be actively avoided.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>*Shared accounts, excessive permissions, and dormant users represent security risks and should be actively avoided.*</span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data protection and privacy</span></span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>REDCap is designed to support secure data capture, including for sensitive research and operational data. However, the platform does not absolve users or the institution of their data protection responsibilities.</span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Project teams are responsible for ensuring that their use of REDCap complies with applicable ethics approvals, data protection legislation, and institutional policies.</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Administrators should pay particular attention to features that increase exposure risk, such as public surveys, API access, and external modules.</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Email and indirect data exposure</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Email is an essential but inherently insecure component of REDCap workflows. While email enables notifications and survey distribution, it should never be used to transmit sensitive data.</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>Administrators should ensure that project teams understand this limitation and design alerts and invitations accordingly. This is a recurring risk area and merits ongoing attention.</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## Incident awareness and response</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Not all security incidents are technical breaches. Misconfigured permissions, accidental data exports, or inappropriate sharing can all constitute security events.</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>When a potential incident is identified, the priority is to contain risk, preserve evidence, and escalate appropriately within institutional governance structures. Documentation of incidents and responses supports learning and accountability.</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## Security as an ongoing process</span></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>Security is not static. Changes in usage patterns, staffing, or external threats can alter the risk profile of the service over time.</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>Regular review of user access, project configurations, and system behaviour helps ensure that security controls remain effective and proportionate.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>:::{.callout-warning} </span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project teams are responsible for their own data security</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Project teams are responsible for ensuring that their use of REDCap complies with applicable ethics approvals, data protection legislation, and institutional policies.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Administrators should pay particular attention to features that increase exposure risk, such as public surveys, API access, and external modules.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Email and indirect data exposure</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Email is an essential but inherently insecure component of REDCap workflows. While email enables notifications and survey distribution, it should never be used to transmit sensitive data.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>Administrators should ensure that project teams understand this limitation and design alerts and invitations accordingly. This is a recurring risk area and merits ongoing attention.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">## Incident awareness and response</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Not all security incidents are technical breaches. Misconfigured permissions, accidental data exports, or inappropriate sharing can all constitute security events.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>When a potential incident is identified, the priority is to contain risk, preserve evidence, and escalate appropriately within institutional governance structures. Documentation of incidents and responses supports learning and accountability.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">## Security as an ongoing process</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Security is not static. Changes in usage patterns, staffing, or external threats can alter the risk profile of the service over time.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Regular review of user access, project configurations, and system behaviour helps ensure that security controls remain effective and proportionate.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="fu">## Baseline governance expectations for REDCap projects</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Approval of a REDCap project confirms that the project owner understands and accepts the following baseline governance expectations. </span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>*These governance rules will apply to those researchers collecting identifiable information from human participants.*</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lawful basis and purpose limitation</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>You must have a clear and documented lawful basis for collecting and processing personal data (e.g. consent, public task, research in the public interest). Data collected in REDCap must only be used for the stated and approved purpose of the project and not for unrelated activities.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data minimisation</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>Only collect the minimum personal data necessary to achieve the project objectives.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>Avoid collecting identifiable information unless it is strictly required.</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">### Transparency and participant information</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>Where personal data are collected from individuals, participants must be provided with appropriate information about:</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>what data are being collected;</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>why the data are being collected;</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>how the data will be used;</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>how long the data will be retained;</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>who to contact regarding their data rights.</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="fu">### Access control and user management</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>Access to the REDCap project must be limited to authorised users only. Users must be assigned the minimum role and permissions necessary to perform their duties.</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>Project owners are responsible for:</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>approving user access;</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>removing access when it is no longer required;</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ensuring users do not share accounts or credentials.</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data security</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>REDCap must be used in accordance with institutional security guidance. Project owners must:</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>avoid exporting identifiable data unless necessary;</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>store exported data securely (think encryption);</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>never email unencrypted personal data;</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ensure local copies of data are protected and access-controlled.</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="fu">### Confidentiality and training</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>All project users must understand their duty of confidentiality. Users should have completed any required institutional data protection or research ethics training relevant to the project.</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data quality and auditability</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>Project owners are responsible for ensuring data are entered accurately and responsibly.</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>REDCap audit logs must not be disabled or circumvented. Any data corrections must follow transparent and documented procedures.</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data retention and deletion</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>Personal data must not be retained longer than necessary. Project owners must have a plan for:</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>data archiving;</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>anonymisation or pseudonymisation where appropriate;</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>secure deletion when the retention period ends.</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data subject rights</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>Projects must be capable of supporting data subject rights under GDPR (or the local Data Protection Legislation of their home country), including:</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>access to personal data;</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>rectification of inaccurate data;</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>restriction or objection where applicable;</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>erasure, where legally permitted.</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>Project owners must know how to escalate such requests through institutional channels.</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="fu">### Incident reporting</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>Any suspected data breach, loss, or unauthorised access must be reported immediately in accordance with institutional incident response procedures.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

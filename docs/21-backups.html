@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ian R Hambleton">
-<meta name="dcterms.date" content="2026-01-18">
+<meta name="dcterms.date" content="2026-01-19">
 
 <title>7&nbsp; System Backups – REDCap at UWI Cave Hill</title>
 <style>
@@ -163,7 +163,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-service.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">REDCap Service Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The REDCap Service Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -178,13 +178,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./10-admin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration Overview</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-support.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Support Requests</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Types of Administrative Requests</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./30-security.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security &amp; Governance</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -270,12 +270,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#infrastructure-level-backups" id="toc-infrastructure-level-backups" class="nav-link active" data-scroll-target="#infrastructure-level-backups"><span class="header-section-number">7.1</span> Infrastructure-level backups</a></li>
-  <li><a href="#application-level-safeguards-in-redcap" id="toc-application-level-safeguards-in-redcap" class="nav-link" data-scroll-target="#application-level-safeguards-in-redcap"><span class="header-section-number">7.2</span> Application-level safeguards in REDCap</a></li>
-  <li><a href="#project-level-data-exports" id="toc-project-level-data-exports" class="nav-link" data-scroll-target="#project-level-data-exports"><span class="header-section-number">7.3</span> Project-level data exports</a></li>
-  <li><a href="#recovery-scenarios" id="toc-recovery-scenarios" class="nav-link" data-scroll-target="#recovery-scenarios"><span class="header-section-number">7.4</span> Recovery scenarios</a></li>
-  <li><a href="#testing-and-assurance" id="toc-testing-and-assurance" class="nav-link" data-scroll-target="#testing-and-assurance"><span class="header-section-number">7.5</span> Testing and assurance</a></li>
-  <li><a href="#end-of-service-considerations" id="toc-end-of-service-considerations" class="nav-link" data-scroll-target="#end-of-service-considerations"><span class="header-section-number">7.6</span> End-of-service considerations</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">7.1</span> Introduction</a></li>
+  <li><a href="#infrastructure-level-backups" id="toc-infrastructure-level-backups" class="nav-link" data-scroll-target="#infrastructure-level-backups"><span class="header-section-number">7.2</span> Infrastructure-level backups</a></li>
+  <li><a href="#application-level-safeguards-in-redcap" id="toc-application-level-safeguards-in-redcap" class="nav-link" data-scroll-target="#application-level-safeguards-in-redcap"><span class="header-section-number">7.3</span> Application-level safeguards in REDCap</a></li>
+  <li><a href="#project-level-data-exports" id="toc-project-level-data-exports" class="nav-link" data-scroll-target="#project-level-data-exports"><span class="header-section-number">7.4</span> Project-level data exports</a></li>
+  <li><a href="#recovery-scenarios" id="toc-recovery-scenarios" class="nav-link" data-scroll-target="#recovery-scenarios"><span class="header-section-number">7.5</span> Recovery scenarios</a></li>
+  <li><a href="#testing-and-assurance" id="toc-testing-and-assurance" class="nav-link" data-scroll-target="#testing-and-assurance"><span class="header-section-number">7.6</span> Testing and assurance</a></li>
+  <li><a href="#end-of-service-considerations" id="toc-end-of-service-considerations" class="nav-link" data-scroll-target="#end-of-service-considerations"><span class="header-section-number">7.7</span> End-of-service considerations</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/CaribData/redcap-operations-book/edit/main/21-backups.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CaribData/redcap-operations-book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
 </nav>
@@ -306,7 +307,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 Jan 2026</p>
+      <p class="date">19 Jan 2026</p>
     </div>
   </div>
   
@@ -318,39 +319,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="introduction" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">7.1</span> Introduction</h2>
 <p>This section describes how backups and data recovery are handled for the UWI REDCap service.</p>
 <p>Backups are a shared responsibility across infrastructure, application, and project levels. No single mechanism provides complete protection against data loss, and it is important to understand what each layer does — and does not — provide.</p>
-<section id="infrastructure-level-backups" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="infrastructure-level-backups"><span class="header-section-number">7.1</span> Infrastructure-level backups</h2>
-<p>HIPAA Vault provides infrastructure-level backups and snapshots as part of its hosting service. These backups are designed to support disaster recovery in the event of server failure, corruption, or major incidents.</p>
-<p>Infrastructure backups typically capture the state of the server at a point in time. They are not intended for routine data retrieval or fine-grained restoration of individual records or projects.</p>
-<p>Retention periods and recovery windows are finite and governed by the hosting agreement. In the event of contract termination or prolonged service disruption, data availability is time-limited.</p>
 </section>
-<section id="application-level-safeguards-in-redcap" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="application-level-safeguards-in-redcap"><span class="header-section-number">7.2</span> Application-level safeguards in REDCap</h2>
-<p>REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports.</p>
-<p>These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.</p>
+<section id="infrastructure-level-backups" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="infrastructure-level-backups"><span class="header-section-number">7.2</span> Infrastructure-level backups</h2>
+<p>HIPAA Vault provides infrastructure-level backups and snapshots as part of its hosting service. These backups are designed to support disaster recovery in the event of server failure, corruption, or major incidents. Infrastructure backups typically capture the state of the server at a point in time. They are not intended for routine data retrieval or fine-grained restoration of individual records or projects. Retention periods and recovery windows are finite and governed by the hosting agreement. In the event of contract termination or prolonged service disruption, data availability is time-limited.</p>
 </section>
-<section id="project-level-data-exports" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="project-level-data-exports"><span class="header-section-number">7.3</span> Project-level data exports</h2>
-<p>Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements.</p>
-<p>Regular data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely outside the REDCap environment.</p>
+<section id="application-level-safeguards-in-redcap" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="application-level-safeguards-in-redcap"><span class="header-section-number">7.3</span> Application-level safeguards in REDCap</h2>
+<p>REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports. These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.</p>
+</section>
+<section id="project-level-data-exports" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="project-level-data-exports"><span class="header-section-number">7.4</span> Project-level data exports</h2>
+<p>Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements. Regular project-level data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely (think encrypted) outside the REDCap environment.</p>
 <p>Administrators should remind project owners that REDCap is a live system, not a long-term archival solution.</p>
 </section>
-<section id="recovery-scenarios" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="recovery-scenarios"><span class="header-section-number">7.4</span> Recovery scenarios</h2>
+<section id="recovery-scenarios" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="recovery-scenarios"><span class="header-section-number">7.5</span> Recovery scenarios</h2>
 <p>Different types of data loss require different responses.</p>
 <p>In the case of accidental record deletion or user error, recovery may not be possible unless the project team has retained recent exports.</p>
 <p>In the case of system-level failure, administrators may work with HIPAA Vault to restore the server from a recent snapshot. This process restores the system to a previous state and may result in loss of recent changes.</p>
 <p>Clear communication with affected users is essential in all recovery scenarios.</p>
 </section>
-<section id="testing-and-assurance" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="testing-and-assurance"><span class="header-section-number">7.5</span> Testing and assurance</h2>
+<section id="testing-and-assurance" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="testing-and-assurance"><span class="header-section-number">7.6</span> Testing and assurance</h2>
 <p>While full restoration tests are rare, administrators should periodically review backup arrangements with the hosting provider and confirm that snapshots are being taken as expected.</p>
 <p>Understanding backup scope and limitations is a key part of service continuity planning.</p>
 </section>
-<section id="end-of-service-considerations" class="level2" data-number="7.6">
-<h2 data-number="7.6" class="anchored" data-anchor-id="end-of-service-considerations"><span class="header-section-number">7.6</span> End-of-service considerations</h2>
+<section id="end-of-service-considerations" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="end-of-service-considerations"><span class="header-section-number">7.7</span> End-of-service considerations</h2>
 <p>If the REDCap service is migrated, decommissioned, or transferred to another institutional owner, data retrieval timelines become critical.</p>
 <p>Project teams should be given clear notice and sufficient time to export their data. After hosting services are terminated, unretrieved data may become permanently inaccessible.</p>
 
@@ -825,8 +825,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./30-security.html" class="pagination-link" aria-label="System Security">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./30-security.html" class="pagination-link" aria-label="System Security &amp; Governance">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security &amp; Governance</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
@@ -839,53 +839,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This section describes how backups and data recovery are handled for the UWI REDCap service.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction </span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Backups are a shared responsibility across infrastructure, application, and project levels. No single mechanism provides complete protection against data loss, and it is important to understand what each layer does — and does not — provide.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>This section describes how backups and data recovery are handled for the UWI REDCap service.</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Infrastructure-level backups</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Backups are a shared responsibility across infrastructure, application, and project levels. No single mechanism provides complete protection against data loss, and it is important to understand what each layer does — and does not — provide.</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>HIPAA Vault provides infrastructure-level backups and snapshots as part of its hosting service. These backups are designed to support disaster recovery in the event of server failure, corruption, or major incidents.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Infrastructure-level backups</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Infrastructure backups typically capture the state of the server at a point in time. They are not intended for routine data retrieval or fine-grained restoration of individual records or projects.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>HIPAA Vault provides infrastructure-level backups and snapshots as part of its hosting service. These backups are designed to support disaster recovery in the event of server failure, corruption, or major incidents. Infrastructure backups typically capture the state of the server at a point in time. They are not intended for routine data retrieval or fine-grained restoration of individual records or projects. Retention periods and recovery windows are finite and governed by the hosting agreement. In the event of contract termination or prolonged service disruption, data availability is time-limited.</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Retention periods and recovery windows are finite and governed by the hosting agreement. In the event of contract termination or prolonged service disruption, data availability is time-limited.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Application-level safeguards in REDCap</span></span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Application-level safeguards in REDCap</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports. These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project-level data exports</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements. Regular project-level data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely (think encrypted) outside the REDCap environment. </span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project-level data exports</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Administrators should remind project owners that REDCap is a live system, not a long-term archival solution.</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Recovery scenarios</span></span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>Regular data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely outside the REDCap environment.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>Different types of data loss require different responses.</span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Administrators should remind project owners that REDCap is a live system, not a long-term archival solution.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>In the case of accidental record deletion or user error, recovery may not be possible unless the project team has retained recent exports.</span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Recovery scenarios</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>In the case of system-level failure, administrators may work with HIPAA Vault to restore the server from a recent snapshot. This process restores the system to a previous state and may result in loss of recent changes.</span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Different types of data loss require different responses.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Clear communication with affected users is essential in all recovery scenarios.</span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>In the case of accidental record deletion or user error, recovery may not be possible unless the project team has retained recent exports.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Testing and assurance</span></span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>In the case of system-level failure, administrators may work with HIPAA Vault to restore the server from a recent snapshot. This process restores the system to a previous state and may result in loss of recent changes.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>While full restoration tests are rare, administrators should periodically review backup arrangements with the hosting provider and confirm that snapshots are being taken as expected.</span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Clear communication with affected users is essential in all recovery scenarios.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Understanding backup scope and limitations is a key part of service continuity planning.</span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## Testing and assurance</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## End-of-service considerations</span></span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>While full restoration tests are rare, administrators should periodically review backup arrangements with the hosting provider and confirm that snapshots are being taken as expected.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>If the REDCap service is migrated, decommissioned, or transferred to another institutional owner, data retrieval timelines become critical.</span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Understanding backup scope and limitations is a key part of service continuity planning.</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## End-of-service considerations</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>If the REDCap service is migrated, decommissioned, or transferred to another institutional owner, data retrieval timelines become critical.</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>Project teams should be given clear notice and sufficient time to export their data. After hosting services are terminated, unretrieved data may become permanently inaccessible.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Project teams should be given clear notice and sufficient time to export their data. After hosting services are terminated, unretrieved data may become permanently inaccessible.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

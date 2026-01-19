@@ -7,6 +7,7 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
+## Introduction 
 
 This section describes how routine maintenance and upgrades are managed for the UWI REDCap service.
 
@@ -16,31 +17,27 @@ The REDCap application runs on a dedicated Linux virtual machine hosted by HIPAA
 
 System maintenance spans multiple layers, each with a different owner.
 
-HIPAA Vault is responsible for the underlying infrastructure, including server hardware, operating system patching, firewall management, and network security.
-
-UWI, through its REDCap administrators, is responsible for the REDCap application itself, including configuration, upgrades, testing, and user communication.
-
-Vanderbilt University provides the REDCap software and documentation but does not perform upgrades, host the system, or provide operational support.
+- **HIPAA Vault** is responsible for the underlying infrastructure, including server hardware, operating system patching, firewall management, and network security.
+- **UWI**, through its REDCap administrators, is responsible for the REDCap application itself, including configuration, upgrades, testing, and user communication.
+- **Vanderbilt University** provides the REDCap software and documentation but does not perform upgrades, host the system, or provide operational support.
 
 Understanding these boundaries is essential when planning or responding to maintenance activities.
 
 ## Routine system checks
 
-Administrators should perform periodic checks to confirm that REDCap is functioning as expected. These checks are typically lightweight and include verifying user access, confirming that surveys and alerts are running, and reviewing system messages or logs for warnings.
-
-Routine checks help detect emerging issues early, particularly in a fixed-resource environment where gradual changes in usage can affect performance.
+[To Complete]{.highlight}
 
 ## REDCap version upgrades
 
-REDCap releases frequent updates, including feature enhancements, bug fixes, and occasional security patches. UWI policy is to keep the system reasonably up to date while avoiding unnecessary disruption to users.
+REDCap releases frequent updates, including feature enhancements, bug fixes, and occasional security patches. The UWI policy is to keep the system reasonably up to date while avoiding unnecessary disruption to users.
 
 Upgrades should be informed by Vanderbilt release notes and changelogs. Not all releases require immediate action, but security-related updates should be prioritised.
 
 ## Pre-upgrade preparation
 
-Before any upgrade, administrators should coordinate with HIPAA Vault to ensure a recent server snapshot is available. This provides a rollback option if the upgrade fails or introduces unexpected behaviour.
+Before any upgrade, administrators must coordinate with the HIPAA Vault team to ensure a recent server snapshot is available. This provides a rollback option if the upgrade fails or introduces unexpected behaviour.
 
-Where possible, new REDCap versions should be tested on a development or staging environment before being applied to the production system. Testing should focus on core functionality, authentication, surveys, alerts, and any enabled external modules.
+At all times, new REDCap versions should be tested on a development or staging environment before being applied to the production system. Testing should focus on core functionality, authentication, surveys, alerts, and any enabled external modules.
 
 Administrators should also notify users in advance if an upgrade is expected to cause service interruption.
 

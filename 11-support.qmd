@@ -1,5 +1,5 @@
 ---
-title: "Support Requests"
+title: "Types of Administrative Requests"
 subtitle: "User support and operational support model"
 author: Ian R Hambleton
 date: last-modified
@@ -7,15 +7,22 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
+## Introduction 
+
 This section describes how support for the UWI REDCap service is provided, including how requests are handled, triaged, and escalated.
 
 The support model reflects the boundaries between REDCap software ownership (Vanderbilt University), local service operation (UWI and CaribData), and infrastructure hosting (HIPAA Vault).
 
 ## Purpose of local support
 
-Local REDCap support exists to enable effective and appropriate use of the platform. It focuses on helping users apply REDCap functionality correctly rather than providing research design, statistical, or methodological advice.
+Local REDCap administrative support exists to enable effective and appropriate use of the platform. It focuses on helping users apply REDCap functionality correctly rather than providing research design, statistical, or methodological advice.
 
-Support activities complement, rather than replace, the extensive documentation and training materials provided by Vanderbilt University.
+Support activities complement---they do not replace---the extensive documentation and training materials provided by Vanderbilt University.
+
+:::{.callout-note}
+### Example Vanderbilt Training Videos
+Vanderbilt University offer a large range of training videos---many offered within the REDCap software---for REDCap users. As an example, here is a curated list of [training videos](./assets/training-videos-v1.pdf).
+:::
 
 ## Types of support requests
 
@@ -30,7 +37,7 @@ These requests relate to user authentication and access, including:
 - account suspension or deletion;
 - account creation and affiliation changes.
 
-These are the most common requests and are usually resolved through the REDCap Control Center.
+These are the most common requests and are generally resolved through the REDCap Control Center.
 
 ### Project and permissions support
 
@@ -42,7 +49,7 @@ These requests relate to project-level governance and configuration, including:
 - managing user permissions and roles;
 - approving API access or external modules.
 
-These requests require judgement, as they often have governance or data protection implications.
+These requests require more judgement. They may have governance or data protection implications, and teh administrator must also ensure that each new project projects a minimum level of project-level metadata. This metadata is requested by the system when users are completing a new project request - however, some metadata fields are optional and free text. Administrator metadata review is necessary.  
 
 ### Technical and system-related support
 
@@ -53,19 +60,17 @@ A smaller number of requests involve more technical issues, such as:
 - mobile app synchronisation issues;
 - issues following REDCap version upgrades.
 
-Where issues relate to infrastructure or server configuration, they are escalated to the hosting provider.
-
----
+Where issues relate to infrastructure or server configuration, they are escalated to the hosting provider. The current server providers (HIPAA-Vault) have generally been highly responsive to our server-related questions. 
 
 ## Common administrative support procedures
 
 This section documents the most frequent administrative actions carried out by REDCap administrators in response to user support requests.
 
-Procedures assume administrator-level access and familiarity with REDCap terminology. They focus on what to do and what to check, rather than UI walkthroughs that may change between REDCap versions.
+Procedures assume administrator-level access and familiarity with REDCap terminology. They focus on what to do and what to check, rather than user-interface walkthroughs that may change between REDCap versions.
 
 ### Resetting a user password
 
-Password resets are required when users cannot log in or did not receive their original account email.
+Password resets are required when users cannot log in or did not receive their original account email (occassionally, the automated REDCap email has been redirected by a user's spam filter).
 
 **Breadcrumb**  
 `Control Center → Browse Users → (select user) → Reset password / Send password reset email`
@@ -91,6 +96,7 @@ User accounts may expire automatically based on institutional or administrative 
 1. Locate the user account.
 2. Edit the expiration date or remove it where appropriate.
 3. Save changes and confirm the account is active.
+4. Advise the user of their updated account expiration
 
 Expiration dates should be applied deliberately and reviewed periodically.
 
@@ -122,7 +128,7 @@ Users occasionally report not receiving their initial account creation email.
 3. Resend the account or password email.
 4. Ask the user to check spam or quarantine folders.
 
-Repeated failures usually indicate email filtering rather than a REDCap issue.
+Repeated failures have generally turned out to be email filtering rather than a REDCap issue.
 
 ### Creating a new user account
 
@@ -137,14 +143,14 @@ New accounts are created centrally to ensure traceability and appropriate use.
 2. Set an expiration date if required.
 3. Save the account and confirm the email notification is sent.
 
-Shared or generic accounts should not be created.
+Shared or generic accounts should not be created. Groups of new users can be created in a single proedure by using the `Create Users (Bulk Upload)` facility. This involves completing a REDCap Excel template and uploading that template.
 
 ### Approving project creation
 
 Requests for new projects require administrative approval.
 
 **Breadcrumb**  
-`Control Center → Project requests / Pending project requests → Review request`
+`Control Center → To-Do List → Pending requests → Review request`
 
 **Procedure**
 
@@ -152,17 +158,17 @@ Requests for new projects require administrative approval.
 2. Confirm whether surveys, public links, API access, or sensitive data are involved.
 3. Approve or reject the request accordingly.
 
-Approval implies that baseline governance expectations have been communicated.
+Approval implies that [baseline governance expectations](./30-security.qmd) have been communicated.
 
 ### Moving a project to production
 
-Projects must be reviewed before moving from development to production.
+Projects must be reviewed before moving from development to production. Best practice dictates that projects should only be moved to Production once the database has been designed and carefully tested. Reverting a project to Development after data-entry has started risks data loss.
 
 **Breadcrumb (project initiates)**  
 `Project → Setup → Move project to Production`
 
 **Breadcrumb (administrator approves)**  
-`Control Center → Pending requests / Production move requests → Approve`
+`Control Center → To-Do List → Pending requests / Production move requests → Approve`
 
 **Procedure**
 
@@ -208,9 +214,7 @@ External modules extend REDCap functionality but may affect system behaviour.
 
 Not all modules are appropriate for all installations.
 
----
-
-## REDCap Control Center: administrator orientation
+## The REDCap Control Center: administrator orientation
 
 The REDCap Control Center is the primary workspace for system administrators. It provides access to system-wide settings, approvals, and oversight tools.
 
@@ -223,19 +227,19 @@ Administrators should understand the structure of the Control Center rather than
   `Control Center → Add New User`
 
 - **Project governance and approvals**  
-  `Control Center → Project requests / Pending requests`
+  `Control Center → To-Do List → Pending requests`
 
 - **System configuration**  
-  `Control Center → System Configuration / General Configuration`
+  `Control Center → System Configuration → General Configuration`
 
-- **Email configuration**  
-  `Control Center → Email Configuration`
+- **System-level User Settings**  
+  `Control Center → System Configuration → User Settings`
 
 - **External modules**  
   `Control Center → External Modules`
 
-- **Logs and audit support**  
-  `Control Center → Logging / System logs`
+- **User Activity Logs**  
+  `Control Center → Dashboards & Activity → User Activity Log`
 
 ### Administrative mindset
 

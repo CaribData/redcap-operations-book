@@ -7,29 +7,23 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
+## Introduction 
+
 This section describes how backups and data recovery are handled for the UWI REDCap service.
 
 Backups are a shared responsibility across infrastructure, application, and project levels. No single mechanism provides complete protection against data loss, and it is important to understand what each layer does — and does not — provide.
 
 ## Infrastructure-level backups
 
-HIPAA Vault provides infrastructure-level backups and snapshots as part of its hosting service. These backups are designed to support disaster recovery in the event of server failure, corruption, or major incidents.
-
-Infrastructure backups typically capture the state of the server at a point in time. They are not intended for routine data retrieval or fine-grained restoration of individual records or projects.
-
-Retention periods and recovery windows are finite and governed by the hosting agreement. In the event of contract termination or prolonged service disruption, data availability is time-limited.
+HIPAA Vault provides infrastructure-level backups and snapshots as part of its hosting service. These backups are designed to support disaster recovery in the event of server failure, corruption, or major incidents. Infrastructure backups typically capture the state of the server at a point in time. They are not intended for routine data retrieval or fine-grained restoration of individual records or projects. Retention periods and recovery windows are finite and governed by the hosting agreement. In the event of contract termination or prolonged service disruption, data availability is time-limited.
 
 ## Application-level safeguards in REDCap
 
-REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports.
-
-These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.
+REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports. These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.
 
 ## Project-level data exports
 
-Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements.
-
-Regular data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely outside the REDCap environment.
+Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements. Regular project-level data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely (think encrypted) outside the REDCap environment. 
 
 Administrators should remind project owners that REDCap is a live system, not a long-term archival solution.
 

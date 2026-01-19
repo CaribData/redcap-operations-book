@@ -64,7 +64,7 @@ format:
     colorlinks: true
 
 execute:
-  freeze: auto
+  freeze: false
   echo: false
   warning: false
   message: false

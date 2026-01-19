@@ -7,6 +7,8 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
+## Introduction 
+
 Email is a fundamental dependency for REDCap, enabling user notifications, survey distribution, and automated alerts. At the same time, it presents governance and security risks that require careful management.
 
 This section documents how email is used within the UWI REDCap service and the principles governing its configuration.
@@ -25,11 +27,11 @@ Where a universal FROM address is used, it should be institutionally owned, moni
 
 Changes to the FROM address or SMTP configuration should be treated as service-level changes and tested accordingly.
 
-The REDCap universal email address is: redcap@cavehill.uwi.edu
+The REDCap universal email address is: [redcap@cavehill.uwi.edu](mailto:redcap@cavehill.uwi.edu).
 
 ## Governance and risk management
 
-Email should always be treated as an insecure communication channel. As such, sensitive personal or health data must never be included in email bodies or attachments.
+Email should always be treated as an insecure communication channel. As such, sensitive personal or health data **must never be included** in email bodies or attachments.
 
 Project-level alerts and survey invitations should reference records using identifiers rather than names, and project teams should be reminded of these constraints during project approval.
 
@@ -37,6 +39,6 @@ These practices align with both Vanderbilt guidance and the security assumptions
 
 ## Testing and change management
 
-Any change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project.
+Any change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project. It is highly recommended that these changes be tested on the *development server* before making the change on the *production server*. 
 
 Email issues are often invisible until users report failures, so short-term monitoring after changes is essential to ensure continuity of service.

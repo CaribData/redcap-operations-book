@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ian R Hambleton">
-<meta name="dcterms.date" content="2026-01-18">
+<meta name="dcterms.date" content="2026-01-19">
 
 <title>6&nbsp; System Maintenance – REDCap at UWI Cave Hill</title>
 <style>
@@ -163,7 +163,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-service.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">REDCap Service Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The REDCap Service Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -178,13 +178,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./10-admin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration Overview</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-support.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Support Requests</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Types of Administrative Requests</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./30-security.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security &amp; Governance</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -270,13 +270,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#responsibility-boundaries" id="toc-responsibility-boundaries" class="nav-link active" data-scroll-target="#responsibility-boundaries"><span class="header-section-number">6.1</span> Responsibility boundaries</a></li>
-  <li><a href="#routine-system-checks" id="toc-routine-system-checks" class="nav-link" data-scroll-target="#routine-system-checks"><span class="header-section-number">6.2</span> Routine system checks</a></li>
-  <li><a href="#redcap-version-upgrades" id="toc-redcap-version-upgrades" class="nav-link" data-scroll-target="#redcap-version-upgrades"><span class="header-section-number">6.3</span> REDCap version upgrades</a></li>
-  <li><a href="#pre-upgrade-preparation" id="toc-pre-upgrade-preparation" class="nav-link" data-scroll-target="#pre-upgrade-preparation"><span class="header-section-number">6.4</span> Pre-upgrade preparation</a></li>
-  <li><a href="#performing-upgrades" id="toc-performing-upgrades" class="nav-link" data-scroll-target="#performing-upgrades"><span class="header-section-number">6.5</span> Performing upgrades</a></li>
-  <li><a href="#post-upgrade-validation" id="toc-post-upgrade-validation" class="nav-link" data-scroll-target="#post-upgrade-validation"><span class="header-section-number">6.6</span> Post-upgrade validation</a></li>
-  <li><a href="#unplanned-maintenance-and-incidents" id="toc-unplanned-maintenance-and-incidents" class="nav-link" data-scroll-target="#unplanned-maintenance-and-incidents"><span class="header-section-number">6.7</span> Unplanned maintenance and incidents</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">6.1</span> Introduction</a></li>
+  <li><a href="#responsibility-boundaries" id="toc-responsibility-boundaries" class="nav-link" data-scroll-target="#responsibility-boundaries"><span class="header-section-number">6.2</span> Responsibility boundaries</a></li>
+  <li><a href="#routine-system-checks" id="toc-routine-system-checks" class="nav-link" data-scroll-target="#routine-system-checks"><span class="header-section-number">6.3</span> Routine system checks</a></li>
+  <li><a href="#redcap-version-upgrades" id="toc-redcap-version-upgrades" class="nav-link" data-scroll-target="#redcap-version-upgrades"><span class="header-section-number">6.4</span> REDCap version upgrades</a></li>
+  <li><a href="#pre-upgrade-preparation" id="toc-pre-upgrade-preparation" class="nav-link" data-scroll-target="#pre-upgrade-preparation"><span class="header-section-number">6.5</span> Pre-upgrade preparation</a></li>
+  <li><a href="#performing-upgrades" id="toc-performing-upgrades" class="nav-link" data-scroll-target="#performing-upgrades"><span class="header-section-number">6.6</span> Performing upgrades</a></li>
+  <li><a href="#post-upgrade-validation" id="toc-post-upgrade-validation" class="nav-link" data-scroll-target="#post-upgrade-validation"><span class="header-section-number">6.7</span> Post-upgrade validation</a></li>
+  <li><a href="#unplanned-maintenance-and-incidents" id="toc-unplanned-maintenance-and-incidents" class="nav-link" data-scroll-target="#unplanned-maintenance-and-incidents"><span class="header-section-number">6.8</span> Unplanned maintenance and incidents</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/CaribData/redcap-operations-book/edit/main/20-maintenance.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CaribData/redcap-operations-book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
 </nav>
@@ -307,7 +308,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 Jan 2026</p>
+      <p class="date">19 Jan 2026</p>
     </div>
   </div>
   
@@ -319,39 +320,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="introduction" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">6.1</span> Introduction</h2>
 <p>This section describes how routine maintenance and upgrades are managed for the UWI REDCap service.</p>
 <p>The REDCap application runs on a dedicated Linux virtual machine hosted by HIPAA Vault. This is a fixed-capacity, managed environment. Maintenance activities therefore require coordination between REDCap administrators and the hosting provider and should follow predictable, documented procedures.</p>
-<section id="responsibility-boundaries" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="responsibility-boundaries"><span class="header-section-number">6.1</span> Responsibility boundaries</h2>
+</section>
+<section id="responsibility-boundaries" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="responsibility-boundaries"><span class="header-section-number">6.2</span> Responsibility boundaries</h2>
 <p>System maintenance spans multiple layers, each with a different owner.</p>
-<p>HIPAA Vault is responsible for the underlying infrastructure, including server hardware, operating system patching, firewall management, and network security.</p>
-<p>UWI, through its REDCap administrators, is responsible for the REDCap application itself, including configuration, upgrades, testing, and user communication.</p>
-<p>Vanderbilt University provides the REDCap software and documentation but does not perform upgrades, host the system, or provide operational support.</p>
+<ul>
+<li><strong>HIPAA Vault</strong> is responsible for the underlying infrastructure, including server hardware, operating system patching, firewall management, and network security.</li>
+<li><strong>UWI</strong>, through its REDCap administrators, is responsible for the REDCap application itself, including configuration, upgrades, testing, and user communication.</li>
+<li><strong>Vanderbilt University</strong> provides the REDCap software and documentation but does not perform upgrades, host the system, or provide operational support.</li>
+</ul>
 <p>Understanding these boundaries is essential when planning or responding to maintenance activities.</p>
 </section>
-<section id="routine-system-checks" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="routine-system-checks"><span class="header-section-number">6.2</span> Routine system checks</h2>
-<p>Administrators should perform periodic checks to confirm that REDCap is functioning as expected. These checks are typically lightweight and include verifying user access, confirming that surveys and alerts are running, and reviewing system messages or logs for warnings.</p>
-<p>Routine checks help detect emerging issues early, particularly in a fixed-resource environment where gradual changes in usage can affect performance.</p>
+<section id="routine-system-checks" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="routine-system-checks"><span class="header-section-number">6.3</span> Routine system checks</h2>
+<p><span class="highlight">To Complete</span></p>
 </section>
-<section id="redcap-version-upgrades" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="redcap-version-upgrades"><span class="header-section-number">6.3</span> REDCap version upgrades</h2>
-<p>REDCap releases frequent updates, including feature enhancements, bug fixes, and occasional security patches. UWI policy is to keep the system reasonably up to date while avoiding unnecessary disruption to users.</p>
+<section id="redcap-version-upgrades" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="redcap-version-upgrades"><span class="header-section-number">6.4</span> REDCap version upgrades</h2>
+<p>REDCap releases frequent updates, including feature enhancements, bug fixes, and occasional security patches. The UWI policy is to keep the system reasonably up to date while avoiding unnecessary disruption to users.</p>
 <p>Upgrades should be informed by Vanderbilt release notes and changelogs. Not all releases require immediate action, but security-related updates should be prioritised.</p>
 </section>
-<section id="pre-upgrade-preparation" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="pre-upgrade-preparation"><span class="header-section-number">6.4</span> Pre-upgrade preparation</h2>
-<p>Before any upgrade, administrators should coordinate with HIPAA Vault to ensure a recent server snapshot is available. This provides a rollback option if the upgrade fails or introduces unexpected behaviour.</p>
-<p>Where possible, new REDCap versions should be tested on a development or staging environment before being applied to the production system. Testing should focus on core functionality, authentication, surveys, alerts, and any enabled external modules.</p>
+<section id="pre-upgrade-preparation" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="pre-upgrade-preparation"><span class="header-section-number">6.5</span> Pre-upgrade preparation</h2>
+<p>Before any upgrade, administrators must coordinate with the HIPAA Vault team to ensure a recent server snapshot is available. This provides a rollback option if the upgrade fails or introduces unexpected behaviour.</p>
+<p>At all times, new REDCap versions should be tested on a development or staging environment before being applied to the production system. Testing should focus on core functionality, authentication, surveys, alerts, and any enabled external modules.</p>
 <p>Administrators should also notify users in advance if an upgrade is expected to cause service interruption.</p>
 </section>
-<section id="performing-upgrades" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="performing-upgrades"><span class="header-section-number">6.5</span> Performing upgrades</h2>
+<section id="performing-upgrades" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="performing-upgrades"><span class="header-section-number">6.6</span> Performing upgrades</h2>
 <p>REDCap upgrades are typically applied by administrators with appropriate access to the server environment. In some cases, HIPAA Vault may assist with server-level changes required to support the upgrade, such as PHP or database adjustments.</p>
 <p>Upgrades should be scheduled during periods of low usage where possible and should be followed immediately by basic functional checks.</p>
 </section>
-<section id="post-upgrade-validation" class="level2" data-number="6.6">
-<h2 data-number="6.6" class="anchored" data-anchor-id="post-upgrade-validation"><span class="header-section-number">6.6</span> Post-upgrade validation</h2>
+<section id="post-upgrade-validation" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="post-upgrade-validation"><span class="header-section-number">6.7</span> Post-upgrade validation</h2>
 <p>After an upgrade, administrators should confirm that:</p>
 <ul>
 <li>users can log in normally;</li>
@@ -361,8 +366,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Any issues should be investigated promptly. If necessary, administrators may revert to the pre-upgrade snapshot in coordination with HIPAA Vault.</p>
 </section>
-<section id="unplanned-maintenance-and-incidents" class="level2" data-number="6.7">
-<h2 data-number="6.7" class="anchored" data-anchor-id="unplanned-maintenance-and-incidents"><span class="header-section-number">6.7</span> Unplanned maintenance and incidents</h2>
+<section id="unplanned-maintenance-and-incidents" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="unplanned-maintenance-and-incidents"><span class="header-section-number">6.8</span> Unplanned maintenance and incidents</h2>
 <p>Occasionally, unplanned maintenance may be required in response to security vulnerabilities, system instability, or hosting issues.</p>
 <p>In such cases, the priority is service stability and data protection. Administrators should document the issue, actions taken, and outcomes, and communicate clearly with users if service availability is affected.</p>
 
@@ -851,65 +856,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This section describes how routine maintenance and upgrades are managed for the UWI REDCap service.</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>The REDCap application runs on a dedicated Linux virtual machine hosted by HIPAA Vault. This is a fixed-capacity, managed environment. Maintenance activities therefore require coordination between REDCap administrators and the hosting provider and should follow predictable, documented procedures.</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Responsibility boundaries</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>System maintenance spans multiple layers, each with a different owner.</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>HIPAA Vault is responsible for the underlying infrastructure, including server hardware, operating system patching, firewall management, and network security.</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>UWI, through its REDCap administrators, is responsible for the REDCap application itself, including configuration, upgrades, testing, and user communication.</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Vanderbilt University provides the REDCap software and documentation but does not perform upgrades, host the system, or provide operational support.</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Understanding these boundaries is essential when planning or responding to maintenance activities.</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Routine system checks</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Administrators should perform periodic checks to confirm that REDCap is functioning as expected. These checks are typically lightweight and include verifying user access, confirming that surveys and alerts are running, and reviewing system messages or logs for warnings.</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Routine checks help detect emerging issues early, particularly in a fixed-resource environment where gradual changes in usage can affect performance.</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## REDCap version upgrades</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>REDCap releases frequent updates, including feature enhancements, bug fixes, and occasional security patches. UWI policy is to keep the system reasonably up to date while avoiding unnecessary disruption to users.</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Upgrades should be informed by Vanderbilt release notes and changelogs. Not all releases require immediate action, but security-related updates should be prioritised.</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pre-upgrade preparation</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Before any upgrade, administrators should coordinate with HIPAA Vault to ensure a recent server snapshot is available. This provides a rollback option if the upgrade fails or introduces unexpected behaviour.</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Where possible, new REDCap versions should be tested on a development or staging environment before being applied to the production system. Testing should focus on core functionality, authentication, surveys, alerts, and any enabled external modules.</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Administrators should also notify users in advance if an upgrade is expected to cause service interruption.</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## Performing upgrades</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>REDCap upgrades are typically applied by administrators with appropriate access to the server environment. In some cases, HIPAA Vault may assist with server-level changes required to support the upgrade, such as PHP or database adjustments.</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Upgrades should be scheduled during periods of low usage where possible and should be followed immediately by basic functional checks.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="fu">## Post-upgrade validation</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>After an upgrade, administrators should confirm that:</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>users can log in normally;</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>projects open and behave as expected;</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>surveys and alerts function correctly;</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>no unexpected errors appear in logs or system messages.</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Any issues should be investigated promptly. If necessary, administrators may revert to the pre-upgrade snapshot in coordination with HIPAA Vault.</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## Unplanned maintenance and incidents</span></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>Occasionally, unplanned maintenance may be required in response to security vulnerabilities, system instability, or hosting issues.</span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>In such cases, the priority is service stability and data protection. Administrators should document the issue, actions taken, and outcomes, and communicate clearly with users if service availability is affected.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction </span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>This section describes how routine maintenance and upgrades are managed for the UWI REDCap service.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>The REDCap application runs on a dedicated Linux virtual machine hosted by HIPAA Vault. This is a fixed-capacity, managed environment. Maintenance activities therefore require coordination between REDCap administrators and the hosting provider and should follow predictable, documented procedures.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Responsibility boundaries</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>System maintenance spans multiple layers, each with a different owner.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**HIPAA Vault** is responsible for the underlying infrastructure, including server hardware, operating system patching, firewall management, and network security.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**UWI**, through its REDCap administrators, is responsible for the REDCap application itself, including configuration, upgrades, testing, and user communication.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Vanderbilt University** provides the REDCap software and documentation but does not perform upgrades, host the system, or provide operational support.</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>Understanding these boundaries is essential when planning or responding to maintenance activities.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Routine system checks</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">To Complete</span><span class="co">]</span>{.highlight}</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## REDCap version upgrades</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>REDCap releases frequent updates, including feature enhancements, bug fixes, and occasional security patches. The UWI policy is to keep the system reasonably up to date while avoiding unnecessary disruption to users.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Upgrades should be informed by Vanderbilt release notes and changelogs. Not all releases require immediate action, but security-related updates should be prioritised.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pre-upgrade preparation</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Before any upgrade, administrators must coordinate with the HIPAA Vault team to ensure a recent server snapshot is available. This provides a rollback option if the upgrade fails or introduces unexpected behaviour.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>At all times, new REDCap versions should be tested on a development or staging environment before being applied to the production system. Testing should focus on core functionality, authentication, surveys, alerts, and any enabled external modules.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Administrators should also notify users in advance if an upgrade is expected to cause service interruption.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">## Performing upgrades</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>REDCap upgrades are typically applied by administrators with appropriate access to the server environment. In some cases, HIPAA Vault may assist with server-level changes required to support the upgrade, such as PHP or database adjustments.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>Upgrades should be scheduled during periods of low usage where possible and should be followed immediately by basic functional checks.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">## Post-upgrade validation</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>After an upgrade, administrators should confirm that:</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>users can log in normally;</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>projects open and behave as expected;</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>surveys and alerts function correctly;</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>no unexpected errors appear in logs or system messages.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Any issues should be investigated promptly. If necessary, administrators may revert to the pre-upgrade snapshot in coordination with HIPAA Vault.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Unplanned maintenance and incidents</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Occasionally, unplanned maintenance may be required in response to security vulnerabilities, system instability, or hosting issues.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>In such cases, the priority is service stability and data protection. Administrators should document the issue, actions taken, and outcomes, and communicate clearly with users if service availability is affected.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

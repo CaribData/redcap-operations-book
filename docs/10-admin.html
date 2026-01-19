@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ian R Hambleton">
-<meta name="dcterms.date" content="2026-01-18">
+<meta name="dcterms.date" content="2026-01-19">
 
-<title>3&nbsp; REDCap Administration – REDCap at UWI Cave Hill</title>
+<title>3&nbsp; REDCap Administration Overview – REDCap at UWI Cave Hill</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10-admin.html">Front-end Ops</a></li><li class="breadcrumb-item"><a href="./10-admin.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10-admin.html">Front-end Ops</a></li><li class="breadcrumb-item"><a href="./10-admin.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration Overview</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -163,7 +163,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-service.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">REDCap Service Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The REDCap Service Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -178,13 +178,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./10-admin.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration Overview</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-support.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Support Requests</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Types of Administrative Requests</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -270,12 +270,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#administrative-role-and-scope" id="toc-administrative-role-and-scope" class="nav-link active" data-scroll-target="#administrative-role-and-scope"><span class="header-section-number">3.1</span> Administrative role and scope</a></li>
-  <li><a href="#user-account-management" id="toc-user-account-management" class="nav-link" data-scroll-target="#user-account-management"><span class="header-section-number">3.2</span> User account management</a></li>
-  <li><a href="#project-creation-and-approval" id="toc-project-creation-and-approval" class="nav-link" data-scroll-target="#project-creation-and-approval"><span class="header-section-number">3.3</span> Project creation and approval</a></li>
-  <li><a href="#project-lifecycle-control" id="toc-project-lifecycle-control" class="nav-link" data-scroll-target="#project-lifecycle-control"><span class="header-section-number">3.4</span> Project lifecycle control</a></li>
-  <li><a href="#elevated-permissions-and-features" id="toc-elevated-permissions-and-features" class="nav-link" data-scroll-target="#elevated-permissions-and-features"><span class="header-section-number">3.5</span> Elevated permissions and features</a></li>
-  <li><a href="#oversight-and-routine-checks" id="toc-oversight-and-routine-checks" class="nav-link" data-scroll-target="#oversight-and-routine-checks"><span class="header-section-number">3.6</span> Oversight and routine checks</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">3.1</span> Introduction</a></li>
+  <li><a href="#administrative-role-and-scope" id="toc-administrative-role-and-scope" class="nav-link" data-scroll-target="#administrative-role-and-scope"><span class="header-section-number">3.2</span> Administrative role and scope</a>
+  <ul class="collapse">
+  <li><a href="#user-account-management" id="toc-user-account-management" class="nav-link" data-scroll-target="#user-account-management"><span class="header-section-number">3.2.1</span> User account management</a></li>
+  <li><a href="#project-creation-and-approval" id="toc-project-creation-and-approval" class="nav-link" data-scroll-target="#project-creation-and-approval"><span class="header-section-number">3.2.2</span> Project creation and approval</a></li>
+  <li><a href="#project-lifecycle-control" id="toc-project-lifecycle-control" class="nav-link" data-scroll-target="#project-lifecycle-control"><span class="header-section-number">3.2.3</span> Project lifecycle control</a></li>
+  </ul></li>
+  <li><a href="#elevated-permissions-and-features" id="toc-elevated-permissions-and-features" class="nav-link" data-scroll-target="#elevated-permissions-and-features"><span class="header-section-number">3.3</span> Elevated permissions and features</a></li>
+  <li><a href="#oversight-and-routine-checks" id="toc-oversight-and-routine-checks" class="nav-link" data-scroll-target="#oversight-and-routine-checks"><span class="header-section-number">3.4</span> Oversight and routine checks</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/CaribData/redcap-operations-book/edit/main/10-admin.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CaribData/redcap-operations-book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
 </nav>
@@ -286,9 +289,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10-admin.html">Front-end Ops</a></li><li class="breadcrumb-item"><a href="./10-admin.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10-admin.html">Front-end Ops</a></li><li class="breadcrumb-item"><a href="./10-admin.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration Overview</span></a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration Overview</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Administration of users and projects</p>
 </div>
 
@@ -306,7 +309,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 Jan 2026</p>
+      <p class="date">19 Jan 2026</p>
     </div>
   </div>
   
@@ -318,37 +321,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="introduction" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">3.1</span> Introduction</h2>
 <p>This section describes how user access and REDCap projects are administered for the University of the West Indies (UWI) REDCap service.</p>
-<p>Administrative functions are exercised on behalf of the institution. They exist to ensure that REDCap is used appropriately, securely, and in line with licensing, governance, and data protection requirements.</p>
-<section id="administrative-role-and-scope" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="administrative-role-and-scope"><span class="header-section-number">3.1</span> Administrative role and scope</h2>
-<p>REDCap administrators (sometimes referred to as “superusers”) are responsible for the configuration and oversight of the REDCap system itself. This role is distinct from that of project managers, who control activity within individual projects.</p>
-<p>Administrative responsibilities include user <em>account management</em>, <em>approval of projects and elevated functions</em>, and <em>oversight of the project lifecycle</em>.</p>
+<p>The REDCap administrative functions ensure that REDCap is used appropriately, securely, and in line with licensing, governance (especially data governance, which differs between Caribbean territories), and data protection requirements.</p>
 </section>
-<section id="user-account-management" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="user-account-management"><span class="header-section-number">3.2</span> User account management</h2>
-<p>All user accounts are created and managed centrally. Requests for access are submitted via the designated REDCap support email and should clearly state:</p>
+<section id="administrative-role-and-scope" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="administrative-role-and-scope"><span class="header-section-number">3.2</span> Administrative role and scope</h2>
+<p>REDCap administrators (who have the highest level of front-end access) are responsible for the configuration and oversight of the REDCap system itself. This role is distinct from that of project managers, who control activity within individual projects.</p>
+<p>Administrative responsibilities include user <em>account management</em>, <em>approval of projects and elevated functions</em>, and <em>oversight of the project lifecycle</em>.</p>
+<section id="user-account-management" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="user-account-management"><span class="header-section-number">3.2.1</span> User account management</h3>
+<p>All user accounts are created and managed centrally. Requests for access are submitted via the designated REDCap support email—currently: <a href="mailto:redcap@cavehill.uwi.edu">redcap@cavehill.uwi.edu</a> and should clearly state:</p>
 <ul>
 <li>the user’s affiliation,</li>
 <li>intended use of REDCap,</li>
 <li>whether they are joining an existing project or proposing a new one.</li>
 </ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>User Sponsors
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If a current project owner wants to add new system users, the email request should come from the project owner. That project owner would then be setup as a <em>user sponsor</em> and have access to a sponsor dashboard for automating certain user related activities.</p>
+</div>
+</div>
 <p>Administrators are responsible for ensuring that:</p>
 <ul>
 <li>accounts are issued only to identifiable individuals;</li>
-<li>accounts use appropriate institutional or approved email addresses;</li>
+<li>accounts use appropriate institutional or approved email addresses whenever possible;</li>
 <li>access is removed or suspended promptly when affiliation ends;</li>
-<li>account expiration dates are used where appropriate.</li>
+<li>account expiration dates are used <em>in all cases</em>.</li>
 </ul>
 <p>Shared or generic accounts are not permitted, as they undermine auditability and accountability.</p>
 </section>
-<section id="project-creation-and-approval" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="project-creation-and-approval"><span class="header-section-number">3.3</span> Project creation and approval</h2>
-<p>New projects require administrative approval before they are created or activated. This step ensures that projects are correctly classified (for example, research versus operational use) and that basic governance expectations are understood by project owners.</p>
-<p>Administrators should confirm that project managers understand their responsibilities for user management, data handling, and compliance within their projects.</p>
+<section id="project-creation-and-approval" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="project-creation-and-approval"><span class="header-section-number">3.2.2</span> Project creation and approval</h3>
+<p>New projects require administrative approval before they are created or activated. This step ensures that projects are correctly classified (for example, research versus operational use), certain additional project-level metadata are collected, and that basic governance expectations are understood by project owners.</p>
+<p>Administrators should confirm that project owners/managers understand their responsibilities for user management, data handling, and compliance within their projects. This responsibility work has generally been performed as part of the onboarding process - whenever a new user is created or a new project created.</p>
 </section>
-<section id="project-lifecycle-control" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="project-lifecycle-control"><span class="header-section-number">3.4</span> Project lifecycle control</h2>
+<section id="project-lifecycle-control" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="project-lifecycle-control"><span class="header-section-number">3.2.3</span> Project lifecycle control</h3>
 <p>Administrators control key transitions in the project lifecycle, including:</p>
 <ul>
 <li>approval of project creation;</li>
@@ -359,14 +377,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Project deletion is irreversible and should only occur after confirming data retention and governance requirements.</p>
 </section>
-<section id="elevated-permissions-and-features" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="elevated-permissions-and-features"><span class="header-section-number">3.5</span> Elevated permissions and features</h2>
-<p>Certain REDCap functions require explicit administrative approval because they introduce additional risk or system-level impact. These include <em>API access</em>, <em>activation of external modules</em>, <em>enabling mobile data collection</em>, and approval of <em>advanced project features</em>.</p>
-<p>Administrative decisions should follow the principle of least privilege and be documented where appropriate.</p>
 </section>
-<section id="oversight-and-routine-checks" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="oversight-and-routine-checks"><span class="header-section-number">3.6</span> Oversight and routine checks</h2>
-<p>As part of normal operations, administrators should periodically review user accounts, project status, and system logs to identify inactive users, stalled projects, or unusual patterns of data export or access.</p>
+<section id="elevated-permissions-and-features" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="elevated-permissions-and-features"><span class="header-section-number">3.3</span> Elevated permissions and features</h2>
+<p>Certain REDCap functions require explicit administrative approval because they introduce additional risk or system-level impact. These include <em>API access</em>, <em>activation of external modules</em>, <em>enabling mobile data collection</em>, and approval of <em>advanced project features</em>.</p>
+<p>Administrative decisions should follow the principle of least privilege, with additional privileges documented at all times.</p>
+</section>
+<section id="oversight-and-routine-checks" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="oversight-and-routine-checks"><span class="header-section-number">3.4</span> Oversight and routine checks</h2>
+<p>As part of normal operations, administrators should periodically review user accounts, project status, and system logs to identify inactive users, stalled projects, or unusual patterns of data export or access. Those periodic reviews should be part of a system maintenance log.</p>
 <p>These checks support institutional accountability and reduce the risk of unnoticed misuse.</p>
 
 
@@ -835,18 +854,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./01-service.html" class="pagination-link" aria-label="REDCap Service Overview">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">REDCap Service Overview</span></span>
+      <a href="./01-service.html" class="pagination-link" aria-label="The REDCap Service Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The REDCap Service Overview</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./11-support.html" class="pagination-link" aria-label="Support Requests">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Support Requests</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./11-support.html" class="pagination-link" aria-label="Types of Administrative Requests">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Types of Administrative Requests</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "REDCap Administration"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "REDCap Administration Overview"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Administration of users and projects"</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> Ian R Hambleton</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
@@ -854,62 +873,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This section describes how user access and REDCap projects are administered for the University of the West Indies (UWI) REDCap service.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction </span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Administrative functions are exercised on behalf of the institution. They exist to ensure that REDCap is used appropriately, securely, and in line with licensing, governance, and data protection requirements.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>This section describes how user access and REDCap projects are administered for the University of the West Indies (UWI) REDCap service.</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Administrative role and scope</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>The REDCap administrative functions ensure that REDCap is used appropriately, securely, and in line with licensing, governance (especially data governance, which differs between Caribbean territories), and data protection requirements.</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>REDCap administrators (sometimes referred to as “superusers”) are responsible for the configuration and oversight of the REDCap system itself. This role is distinct from that of project managers, who control activity within individual projects.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Administrative role and scope</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Administrative responsibilities include user *account management*, *approval of projects and elevated functions*, and *oversight of the project lifecycle*.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>REDCap administrators (who have the highest level of front-end access) are responsible for the configuration and oversight of the REDCap system itself. This role is distinct from that of project managers, who control activity within individual projects.</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## User account management</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Administrative responsibilities include user *account management*, *approval of projects and elevated functions*, and *oversight of the project lifecycle*.</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>All user accounts are created and managed centrally. Requests for access are submitted via the designated REDCap support email and should clearly state:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">### User account management</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>the user’s affiliation, </span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>intended use of REDCap, </span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>whether they are joining an existing project or proposing a new one.</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Administrators are responsible for ensuring that:</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>All user accounts are created and managed centrally. Requests for access are submitted via the designated REDCap support email---currently: <span class="co">[</span><span class="ot">redcap@cavehill.uwi.edu</span><span class="co">](mailto:redcap@cavehill.uwi.edu)</span> and should clearly state:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>the user’s affiliation, </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>intended use of REDCap, </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>whether they are joining an existing project or proposing a new one.</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>accounts are issued only to identifiable individuals;</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>accounts use appropriate institutional or approved email addresses;</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>access is removed or suspended promptly when affiliation ends;</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>account expiration dates are used where appropriate.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>::: {.callout-note} </span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">#### User Sponsors </span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>If a current project owner wants to add new system users, the email request should come from the project owner. That project owner would then be setup as a *user sponsor* and have access to a sponsor dashboard for automating certain user related activities. </span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>Shared or generic accounts are not permitted, as they undermine auditability and accountability.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a> Administrators are responsible for ensuring that:</span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project creation and approval</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>New projects require administrative approval before they are created or activated. This step ensures that projects are correctly classified (for example, research versus operational use) and that basic governance expectations are understood by project owners.</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Administrators should confirm that project managers understand their responsibilities for user management, data handling, and compliance within their projects.</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project lifecycle control</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Administrators control key transitions in the project lifecycle, including:</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>approval of project creation;</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>moving projects from development to production;</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>approval of project copies;</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>archiving of completed or inactive projects;</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>deletion of projects, where permitted by institutional policy.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Project deletion is irreversible and should only occur after confirming data retention and governance requirements.</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Elevated permissions and features</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>Certain REDCap functions require explicit administrative approval because they introduce additional risk or system-level impact. These include *API access*, *activation of external modules*, *enabling mobile data collection*, and approval of *advanced project features*.</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Administrative decisions should follow the principle of least privilege and be documented where appropriate.</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Oversight and routine checks</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>As part of normal operations, administrators should periodically review user accounts, project status, and system logs to identify inactive users, stalled projects, or unusual patterns of data export or access.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>These checks support institutional accountability and reduce the risk of unnoticed misuse.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>accounts are issued only to identifiable individuals;</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>accounts use appropriate institutional or approved email addresses whenever possible;</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>access is removed or suspended promptly when affiliation ends;</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>account expiration dates are used *in all cases*.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Shared or generic accounts are not permitted, as they undermine auditability and accountability.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project creation and approval</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>New projects require administrative approval before they are created or activated. This step ensures that projects are correctly classified (for example, research versus operational use), certain additional project-level metadata are collected, and that basic governance expectations are understood by project owners.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>Administrators should confirm that project owners/managers understand their responsibilities for user management, data handling, and compliance within their projects. This responsibility work has generally been performed as part of the onboarding process - whenever a new user is created or a new project created. </span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project lifecycle control</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>Administrators control key transitions in the project lifecycle, including:</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>approval of project creation;</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>moving projects from development to production;</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>approval of project copies;</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>archiving of completed or inactive projects;</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>deletion of projects, where permitted by institutional policy.</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>Project deletion is irreversible and should only occur after confirming data retention and governance requirements.</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## Elevated permissions and features</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>Certain REDCap functions require explicit administrative approval because they introduce additional risk or system-level impact. These include *API access*, *activation of external modules*, *enabling mobile data collection*, and approval of *advanced project features*.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>Administrative decisions should follow the principle of least privilege, with additional privileges documented at all times.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## Oversight and routine checks</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>As part of normal operations, administrators should periodically review user accounts, project status, and system logs to identify inactive users, stalled projects, or unusual patterns of data export or access. Those periodic reviews should be part of a system maintenance log.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>These checks support institutional accountability and reduce the risk of unnoticed misuse.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

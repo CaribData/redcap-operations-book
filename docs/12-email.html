@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ian R Hambleton">
-<meta name="dcterms.date" content="2026-01-18">
+<meta name="dcterms.date" content="2026-01-19">
 
 <title>5&nbsp; REDCap Emails – REDCap at UWI Cave Hill</title>
 <style>
@@ -163,7 +163,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-service.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">REDCap Service Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The REDCap Service Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -178,13 +178,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./10-admin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration Overview</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-support.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Support Requests</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Types of Administrative Requests</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./30-security.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security &amp; Governance</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -270,10 +270,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#role-of-email-in-redcap" id="toc-role-of-email-in-redcap" class="nav-link active" data-scroll-target="#role-of-email-in-redcap"><span class="header-section-number">5.1</span> Role of email in REDCap</a></li>
-  <li><a href="#universal-from-address-considerations" id="toc-universal-from-address-considerations" class="nav-link" data-scroll-target="#universal-from-address-considerations"><span class="header-section-number">5.2</span> Universal FROM address considerations</a></li>
-  <li><a href="#governance-and-risk-management" id="toc-governance-and-risk-management" class="nav-link" data-scroll-target="#governance-and-risk-management"><span class="header-section-number">5.3</span> Governance and risk management</a></li>
-  <li><a href="#testing-and-change-management" id="toc-testing-and-change-management" class="nav-link" data-scroll-target="#testing-and-change-management"><span class="header-section-number">5.4</span> Testing and change management</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">5.1</span> Introduction</a></li>
+  <li><a href="#role-of-email-in-redcap" id="toc-role-of-email-in-redcap" class="nav-link" data-scroll-target="#role-of-email-in-redcap"><span class="header-section-number">5.2</span> Role of email in REDCap</a></li>
+  <li><a href="#universal-from-address-considerations" id="toc-universal-from-address-considerations" class="nav-link" data-scroll-target="#universal-from-address-considerations"><span class="header-section-number">5.3</span> Universal FROM address considerations</a></li>
+  <li><a href="#governance-and-risk-management" id="toc-governance-and-risk-management" class="nav-link" data-scroll-target="#governance-and-risk-management"><span class="header-section-number">5.4</span> Governance and risk management</a></li>
+  <li><a href="#testing-and-change-management" id="toc-testing-and-change-management" class="nav-link" data-scroll-target="#testing-and-change-management"><span class="header-section-number">5.5</span> Testing and change management</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/CaribData/redcap-operations-book/edit/main/12-email.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CaribData/redcap-operations-book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
 </nav>
@@ -304,7 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 Jan 2026</p>
+      <p class="date">19 Jan 2026</p>
     </div>
   </div>
   
@@ -316,29 +317,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="introduction" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">5.1</span> Introduction</h2>
 <p>Email is a fundamental dependency for REDCap, enabling user notifications, survey distribution, and automated alerts. At the same time, it presents governance and security risks that require careful management.</p>
 <p>This section documents how email is used within the UWI REDCap service and the principles governing its configuration.</p>
-<section id="role-of-email-in-redcap" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="role-of-email-in-redcap"><span class="header-section-number">5.1</span> Role of email in REDCap</h2>
+</section>
+<section id="role-of-email-in-redcap" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="role-of-email-in-redcap"><span class="header-section-number">5.2</span> Role of email in REDCap</h2>
 <p>REDCap uses email to support core functions such as account creation, password management, survey invitations, reminders, and Alerts &amp; Notifications configured within projects.</p>
 <p>While email delivery is essential for normal operation, REDCap does not require a fixed or branded sender address, provided that outbound email routing is correctly configured.</p>
 </section>
-<section id="universal-from-address-considerations" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="universal-from-address-considerations"><span class="header-section-number">5.2</span> Universal FROM address considerations</h2>
+<section id="universal-from-address-considerations" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="universal-from-address-considerations"><span class="header-section-number">5.3</span> Universal FROM address considerations</h2>
 <p>A universal FROM address can provide consistency and simplify mail routing, but it also introduces a dependency on the continued availability of the associated domain and mailbox.</p>
 <p>Where a universal FROM address is used, it should be institutionally owned, monitored, and reviewed periodically. Personal or externally funded mailboxes should be avoided.</p>
 <p>Changes to the FROM address or SMTP configuration should be treated as service-level changes and tested accordingly.</p>
-<p>The REDCap universal email address is: redcap@cavehill.uwi.edu</p>
+<p>The REDCap universal email address is: <a href="mailto:redcap@cavehill.uwi.edu">redcap@cavehill.uwi.edu</a>.</p>
 </section>
-<section id="governance-and-risk-management" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="governance-and-risk-management"><span class="header-section-number">5.3</span> Governance and risk management</h2>
-<p>Email should always be treated as an insecure communication channel. As such, sensitive personal or health data must never be included in email bodies or attachments.</p>
+<section id="governance-and-risk-management" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="governance-and-risk-management"><span class="header-section-number">5.4</span> Governance and risk management</h2>
+<p>Email should always be treated as an insecure communication channel. As such, sensitive personal or health data <strong>must never be included</strong> in email bodies or attachments.</p>
 <p>Project-level alerts and survey invitations should reference records using identifiers rather than names, and project teams should be reminded of these constraints during project approval.</p>
 <p>These practices align with both Vanderbilt guidance and the security assumptions of the hosting environment.</p>
 </section>
-<section id="testing-and-change-management" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="testing-and-change-management"><span class="header-section-number">5.4</span> Testing and change management</h2>
-<p>Any change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project.</p>
+<section id="testing-and-change-management" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="testing-and-change-management"><span class="header-section-number">5.5</span> Testing and change management</h2>
+<p>Any change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project. It is highly recommended that these changes be tested on the <em>development server</em> before making the change on the <em>production server</em>.</p>
 <p>Email issues are often invisible until users report failures, so short-term monitoring after changes is essential to ensure continuity of service.</p>
 
 
@@ -807,8 +811,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./11-support.html" class="pagination-link" aria-label="Support Requests">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Support Requests</span></span>
+      <a href="./11-support.html" class="pagination-link" aria-label="Types of Administrative Requests">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Types of Administrative Requests</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
@@ -826,39 +830,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">draft:</span><span class="co"> false</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Email is a fundamental dependency for REDCap, enabling user notifications, survey distribution, and automated alerts. At the same time, it presents governance and security risks that require careful management.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction </span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>This section documents how email is used within the UWI REDCap service and the principles governing its configuration.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Email is a fundamental dependency for REDCap, enabling user notifications, survey distribution, and automated alerts. At the same time, it presents governance and security risks that require careful management.</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Role of email in REDCap</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>This section documents how email is used within the UWI REDCap service and the principles governing its configuration.</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>REDCap uses email to support core functions such as account creation, password management, survey invitations, reminders, and Alerts &amp; Notifications configured within projects.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Role of email in REDCap</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>While email delivery is essential for normal operation, REDCap does not require a fixed or branded sender address, provided that outbound email routing is correctly configured.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>REDCap uses email to support core functions such as account creation, password management, survey invitations, reminders, and Alerts &amp; Notifications configured within projects.</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Universal FROM address considerations</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>While email delivery is essential for normal operation, REDCap does not require a fixed or branded sender address, provided that outbound email routing is correctly configured.</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>A universal FROM address can provide consistency and simplify mail routing, but it also introduces a dependency on the continued availability of the associated domain and mailbox.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Universal FROM address considerations</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>Where a universal FROM address is used, it should be institutionally owned, monitored, and reviewed periodically. Personal or externally funded mailboxes should be avoided.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>A universal FROM address can provide consistency and simplify mail routing, but it also introduces a dependency on the continued availability of the associated domain and mailbox.</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Changes to the FROM address or SMTP configuration should be treated as service-level changes and tested accordingly.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Where a universal FROM address is used, it should be institutionally owned, monitored, and reviewed periodically. Personal or externally funded mailboxes should be avoided.</span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>The REDCap universal email address is: redcap@cavehill.uwi.edu</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Changes to the FROM address or SMTP configuration should be treated as service-level changes and tested accordingly.</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Governance and risk management</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>The REDCap universal email address is: <span class="co">[</span><span class="ot">redcap@cavehill.uwi.edu</span><span class="co">](mailto:redcap@cavehill.uwi.edu)</span>.</span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>Email should always be treated as an insecure communication channel. As such, sensitive personal or health data must never be included in email bodies or attachments.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Governance and risk management</span></span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Project-level alerts and survey invitations should reference records using identifiers rather than names, and project teams should be reminded of these constraints during project approval.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Email should always be treated as an insecure communication channel. As such, sensitive personal or health data **must never be included** in email bodies or attachments.</span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>These practices align with both Vanderbilt guidance and the security assumptions of the hosting environment.</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>Project-level alerts and survey invitations should reference records using identifiers rather than names, and project teams should be reminded of these constraints during project approval.</span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Testing and change management</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>These practices align with both Vanderbilt guidance and the security assumptions of the hosting environment.</span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Any change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Testing and change management</span></span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Email issues are often invisible until users report failures, so short-term monitoring after changes is essential to ensure continuity of service.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Any change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project. It is highly recommended that these changes be tested on the *development server* before making the change on the *production server*. </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Email issues are often invisible until users report failures, so short-term monitoring after changes is essential to ensure continuity of service.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

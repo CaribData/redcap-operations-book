@@ -7,6 +7,7 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
+## Introduction 
 
 This section provides practical checklists to support continuity of the UWI REDCap service.
 
@@ -14,7 +15,11 @@ The aim is not to replace judgement, but to reduce reliance on memory during rou
 
 ## Routine operational checks
 
-At regular intervals, administrators should confirm that the service is functioning as expected. This includes checking user access, reviewing recent support requests for patterns, and ensuring that system messages or warnings have not been overlooked.
+At regular intervals, administrators should confirm that the service is functioning as expected. This includes checking:
+
+- user access, 
+- reviewing recent support requests for patterns, and 
+- ensuring that system messages or warnings have not been overlooked.
 
 These checks are especially important in a fixed-capacity hosting environment, where gradual increases in usage may have cumulative effects.
 
@@ -32,7 +37,13 @@ Skipping preparation increases the risk of avoidable service interruption.
 
 ## Post-upgrade checklist
 
-After an upgrade, administrators should verify that core functionality is intact. This includes login, project access, surveys, alerts, and any enabled external modules.
+After an upgrade, administrators should verify that core functionality is intact. This includes:
+
+- login, 
+- project access, 
+- survey functionality, 
+- alerts, and 
+- any enabled external modules.
 
 Unexpected behaviour should be investigated promptly, and rollback options considered if stability is compromised.
 
@@ -44,9 +55,7 @@ Administrators should identify whether the issue is user-related, application-le
 
 ## Staff transition and handover
 
-REDCap continuity depends on more than documentation. When administrative responsibility changes, access credentials, vendor contacts, and institutional knowledge must be deliberately transferred.
-
-This guide is intended to support that process, but it cannot replace structured handover and oversight.
+REDCap continuity depends on more than documentation. When administrative responsibility changes, access credentials, vendor contacts, and institutional knowledge must be deliberately transferred. This guide is intended to support that process. 
 
 ## Periodic review
 

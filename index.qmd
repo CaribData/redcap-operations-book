@@ -5,31 +5,42 @@ author: Ian R Hambleton
 date: last-modified
 date-format: "D MMM YYYY"
 draft: false
+number-sections: false
 ---
 
-## What this guide is
-- Audience:
-- Scope:
+## Introduction
+This book is an operations and maintenance guide for the REDCap service available at The University of the West Indies, Cave Hill campus. In early 2026, the operations of this REDCap installation pass from the [CaribData](https://docs.caribdata.org/) funded project to the Cave Hill campus. This book is provided to provide operational continuity.
 
-## What this guide is not
-- REDCap user training:
-- Instrument design tutorials:
-- Statistical/analysis guidance:
+REDCap is at heart an online data collection platform. In practice though it is much more---it is an institutional service that supports research governance, ethics, data protection, and day-to-day academic work. When it runs quietly, nobody notices. When it fails, the consequences are immediate and visible. This guide documents how the service is actually run, with less information on how it is built and configured.
 
-## Service ownership and responsibilities
-- Service owner:
-- Technical owner:
-- Front-end support lead:
-- Back-end support lead:
-- Escalation contact(s):
+So the focus here is operational: routine tasks, decision points, risks, and recovery. The intent is not to explain how REDCap works for end users, nor to replicate official REDCap documentation. Instead, this guide captures the local knowledge required to keep the service stable, compliant, and trustworthy over time.
 
-## Where to find official REDCap training and documentation
-- Link(s) to official resources:
-- Local policy links:
+## Who this guide is for
 
-## How to use this runbook
-- Common workflows:
-- Where to log changes/incidents:
+The book is written for staff who inherit responsibility for the REDCap service, whether as system administrators, IT support, research office staff, or technical managers. It assumes general technical competence, but not prior familiarity with this specific REDCap instance or its history.
 
-## Change log
-- YYYY-MM-DD — summary — author
+Some sections will be relevant to day-to-day operations. Others exist purely for rare but high-impact situations---incidents, security events, migrations, or staff turnover. Those moments when undocumented knowledge causes the most harm.
+
+## How to use this book
+
+This is not a book to be read cover to cover.
+
+Each chapter is designed to stand alone and be consulted when needed. Operational checklists, configuration notes, and governance decisions are intentionally explicit. Because of the dip-in-and-out nature of the book we do repeat ourselves from chapter to chapter. Where appropriate, the guide distinguishes between:
+
+- what must be done to keep the service functioning,
+- what should be done to keep it well-governed, and
+- what could be improved if capacity allows.
+
+## Scope and limitations
+
+This guide documents the REDCap service as operated in this institutional context. It does not attempt to cover every REDCap feature, nor does it override official REDCap guidance or institutional policy. Where local practice diverges from defaults or recommendations, that divergence is made explicit and justified.
+
+The guide should be treated as a living document. REDCap versions change, institutional policies evolve, and staff roles shift. The book is hosted through GitHub, and is public, so the next group to manage this REDCap instance can keep the site live and up-to-date. 
+
+:::{.callout-note}
+This is a static site built using [Quarto](https://quarto.org/) and hosted via [GitHub Pages](https://docs.github.com/en/pages). A basic knowledge of these systems will be needed to maintain the site. Those skills are not part of this handover document.
+:::
+
+## A final note
+
+We view operational handover as a process, and this book is one part of that process. The original CaribData team - led by Professor Ian Hambleton - will remain available for questions going forwards. 

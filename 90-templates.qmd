@@ -1,35 +1,68 @@
 ---
-title: "Useful Templates"
-subtitle: "Reference templates and standard texts"
+title: "Standard REDCap Wording for Re-Use"
+subtitle: "Reference text for use by administrators and users"
 author: Ian R Hambleton
 date: last-modified
 date-format: "D MMM YYYY"
 draft: false
 ---
 
-This section provides standard text and lightweight templates used in the operation of the UWI REDCap service.
+## Introduction 
 
-The intent is consistency, not bureaucracy. These templates should be adapted as needed, but deviations should be deliberate.
+This section provides standard text and lightweight templates used in the operation of the UWI REDCap service.
 
 ## Standard service description
 
 The following text may be used in institutional documentation, presentations, or onboarding materials:
 
-“REDCap (Research Electronic Data Capture) is a secure, web-based software platform developed by Vanderbilt University and hosted for The University of the West Indies by CaribData. It is designed to support the collection and management of research and operational data through validated data capture, audit trails, and controlled data export.”
+> REDCap (Research Electronic Data Capture) is a secure, web-based software platform developed by Vanderbilt University and hosted for The University of the West Indies by CaribData. It is designed to support the collection and management of research and operational data through validated data capture, audit trails, and controlled data export.
 
 ## Suggested REDCap citation text
 
 For use in publications, reports, or methods sections:
 
-*“Data were collected and managed using REDCap electronic data capture tools hosted by CaribData for The University of the West Indies, Cave Hill.”*
+> Data were collected and managed using REDCap electronic data capture tools hosted by CaribData for The University of the West Indies, Cave Hill.*
 
 Project teams should also include standard REDCap methodological citations as recommended by the REDCap Consortium.
+
+> *PA Harris, R Taylor, R Thielke, J Payne, N Gonzalez, JG. Conde, Research electronic data capture (REDCap) – A metadata-driven methodology and workflow process for providing translational research informatics support, J Biomed Inform. 2009 Apr;42(2):377-81.*
+
+## Standard wording for ethics and research governance submissions
+
+The following text may be used by project owners when describing REDCap in ethics applications, research protocols, or governance documentation.
+
+> **Description of the REDCap platform**
+> REDCap (Research Electronic Data Capture) is a secure, web-based application designed to support data capture for research and operational projects. It enables users to build and manage electronic data collection instruments, deploy surveys and forms, manage role-based access to data, and export data to standard statistical formats.
+>
+> REDCap is developed and maintained by Vanderbilt University and made available to institutions through a non-profit licensing agreement. The University of the West Indies participates in the REDCap Consortium and operates REDCap in accordance with the consortium’s governance and licensing requirements.
+>
+> **Data security and access controls**
+>
+> The REDCap platform includes multiple security features designed to protect personal and sensitive data, including:
+>
+> - role-based user access controls;
+- user authentication and permission management;
+- full audit logging of data entry, modification, and export activity;
+- encrypted data transmission using HTTPS;
+- configurable project-level security settings.
+>
+> Access to each REDCap project is restricted to authorised users approved by the project owner. Users are granted the minimum level of access necessary for their role.
+>
+> **Data storage and governance**
+>
+> The UWI REDCap data are stored on an approved third-party infrastructure operating under contractual and governance arrangements with the University. System administration, user management, and governance oversight are performed by designated University REDCap administrators.
+>
+> REDCap supports compliance with data protection and research governance requirements by enabling controlled access, auditability, and structured data management. Responsibility for lawful data collection, ethical approval, and appropriate data use remains with the project owner and the institution.
+>
+> **Use in research and ethics-approved projects**
+>
+> REDCap is widely used internationally for ethically approved research and operational data collection, including studies involving personal and sensitive data. Its design supports good research data management practices, including transparency, accountability, and data security.
 
 ## User account request information
 
 When requesting a new REDCap user account, the following information should be provided:
 
-- Full name  
+> - Full name  
 - Email address  
 - Institutional affiliation  
 - Intended use of REDCap  
@@ -41,7 +74,7 @@ Providing complete information helps reduce delays in account creation.
 
 When requesting approval for a new project, project leads should be prepared to describe:
 
-- the purpose of the project (research, operational, teaching, etc.);
+> - the purpose of the project (research, operational, teaching, etc.);
 - the type of data to be collected;
 - whether surveys or public links will be used;
 - whether sensitive or personal data are involved.
@@ -52,10 +85,10 @@ This information supports appropriate governance without creating unnecessary ad
 
 The following text may be adapted when notifying users of planned maintenance or upgrades:
 
-“A scheduled update to the UWI REDCap system will take place on [date/time]. Short service interruptions may occur during this period. Please ensure that critical work is saved in advance.”
+> A scheduled update to the UWI REDCap system will take place on [date/time]. Short service interruptions may occur during this period. Please ensure that critical work is saved in advance.
 
 ## Incident notification text (example)
 
 Where appropriate, the following wording may be used to communicate service issues:
 
-“We are currently investigating an issue affecting the UWI REDCap service. Updates will be provided as more information becomes available.”
+> We are currently investigating an issue affecting the UWI REDCap service. Updates will be provided as more information becomes available.
