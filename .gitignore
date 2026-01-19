@@ -1,0 +1,73 @@
+################################################################################
+# Quarto
+################################################################################
+
+# Quarto working/cache directory (ignore anywhere)
+.quarto/
+
+# Quarto output directories (depending on project type/config)
+_site/
+_book/
+docs/
+
+# Quarto freeze/caches (optional, but usually yes for repos unless you rely on freeze)
+_freeze/
+
+# If you ever render single files next to sources and don't want them tracked:
+# (Prefer ignoring output dirs above; leave these commented unless you need them)
+# *.html
+
+################################################################################
+# R / knitr
+################################################################################
+
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# knitr / R Markdown artifacts that sometimes appear
+*_cache/
+*.utf8.md
+*.knit.md
+
+################################################################################
+# Jupyter / Python
+################################################################################
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Your current rule (keep it; it's good)
+**/*.quarto_ipynb
+
+################################################################################
+# Logs and temp files
+################################################################################
+
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+################################################################################
+# OS junk
+################################################################################
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+################################################################################
+# Editor / IDE
+################################################################################
+
+.vscode/
+.idea/
+*.code-workspace
