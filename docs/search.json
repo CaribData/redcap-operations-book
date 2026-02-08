@@ -68,7 +68,7 @@
     "href": "01-service.html#hosting-and-infrastructure-responsibilities",
     "title": "2  The REDCap Service Overview",
     "section": "2.3 Hosting and infrastructure responsibilities",
-    "text": "2.3 Hosting and infrastructure responsibilities\nThe REDCap application is hosted on dedicated servers managed by HIPAA-Vault under a commercial hosting and support agreement JC comment: this link opens to a 404 error page with UWI. Under this arrangement, HIPAA-Vault is responsible for:\n\nserver provisioning and maintenance;\noperating system patching and upgrades;\nmanaged firewalls and network security;\ninfrastructure-level monitoring and incident response;\ndata centre security and availability guarantees.\n\nHIPAA-Vault provides infrastructure services only. Responsibility for REDCap configuration, user management, governance, and compliance remains with UWI and its designated administrators.",
+    "text": "2.3 Hosting and infrastructure responsibilities\nThe REDCap application is hosted on dedicated servers managed by HIPAA-Vault under a commercial hosting and support agreement with UWI. Under this arrangement, HIPAA-Vault is responsible for:\n\nserver provisioning and maintenance;\noperating system patching and upgrades;\nmanaged firewalls and network security;\ninfrastructure-level monitoring and incident response;\ndata centre security and availability guarantees.\n\nHIPAA-Vault provides infrastructure services only. Responsibility for REDCap configuration, user management, governance, and compliance remains with UWI and its designated administrators.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>The REDCap Service Overview</span>"
     ]
