@@ -24,13 +24,8 @@ System maintenance spans multiple layers, each with a different owner.
 Understanding these boundaries is essential when planning or responding to maintenance activities.
 
 ## Routine system checks
-System checks are usually performed early morning on a daily basis to ensure REDCap is functioning optimally. 
-These checks can include but are not limited to:
 
-- Logging into REDCap
-- Opening and saving survey settings in a project enabled as a survey
-- Testing the rich text editor
-- Checking system responsiveness
+[To Complete]{.highlight}
 
 ## REDCap version upgrades
 
@@ -63,19 +58,8 @@ After an upgrade, administrators should confirm that:
 
 Any issues should be investigated promptly. If necessary, administrators may revert to the pre-upgrade snapshot in coordination with HIPAA Vault.
 
-## Unplanned/Planned maintenance and incidents
+## Unplanned maintenance and incidents
 
-Occasionally, unplanned maintenance may be required in response to security vulnerabilities, system instability, or hosting issues. 
-```{=typst} 
-#set text(fill: red)
-Planned maintenance typically includes server software upgrades, e.g. PHP upgrades, OS EoLs, etc.
-```
+Occasionally, unplanned maintenance may be required in response to security vulnerabilities, system instability, or hosting issues.
 
 In such cases, the priority is service stability and data protection. Administrators should document the issue, actions taken, and outcomes, and communicate clearly with users if service availability is affected.
-```{=typst} 
-#set text(fill: red)
-In a few cases, it may be advisable to take REDCap offline during this period.
-
-In some cases, administrators may need to research any potential impact of server software upgrades on the REDCap system to ensure compatibility. 
-Of course, the such upgrades should be performed and tested on the development/staging environment prior to deployment on the production environment.
-```

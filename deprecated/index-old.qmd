@@ -9,7 +9,7 @@ number-sections: false
 ---
 
 ## Introduction
-This book is an operations and maintenance guide for the REDCap service available at The University of the West Indies, Cave Hill campus. In early 2026, the operations of this REDCap installation passed from the [CaribData](https://docs.caribdata.org/) funded project to the Cave Hill campus. The purpose of this book is to provide operational continuity.
+This book is an operations and maintenance guide for the REDCap service available at The University of the West Indies, Cave Hill campus. In early 2026, the operations of this REDCap installation pass from the [CaribData](https://docs.caribdata.org/) funded project to the Cave Hill campus. This book is provided to provide operational continuity.
 
 REDCap is at heart an online data collection platform. In practice though it is much more---it is an institutional service that supports research governance, ethics, data protection, and day-to-day academic work. When it runs quietly, nobody notices. When it fails, the consequences are immediate and visible. This guide documents how the service is actually run, with less information on how it is built and configured.
 
@@ -40,3 +40,7 @@ The guide should be treated as a living document. REDCap versions change, instit
 :::{.callout-note}
 This is a static site built using [Quarto](https://quarto.org/) and hosted via [GitHub Pages](https://docs.github.com/en/pages). A basic knowledge of these systems will be needed to maintain the site. Those skills are not part of this handover document.
 :::
+
+## A final note
+
+We view operational handover as a process, and this book is one part of that process. The original CaribData team - led by Professor Ian Hambleton - will remain available for questions going forwards. 

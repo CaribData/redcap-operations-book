@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ian R Hambleton">
-<meta name="dcterms.date" content="2026-01-19">
 
 <title>REDCap at UWI Cave Hill</title>
 <style>
@@ -177,13 +176,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./10-admin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REDCap Administration Overview</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-support.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Support Requests</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Types of Administrative Requests</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -229,7 +228,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./30-security.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">System Security &amp; Governance</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -252,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./90-templates.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Useful Templates</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard REDCap Wording for Re-Use</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -273,7 +272,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#who-this-guide-is-for" id="toc-who-this-guide-is-for" class="nav-link" data-scroll-target="#who-this-guide-is-for">Who this guide is for</a></li>
   <li><a href="#how-to-use-this-book" id="toc-how-to-use-this-book" class="nav-link" data-scroll-target="#how-to-use-this-book">How to use this book</a></li>
   <li><a href="#scope-and-limitations" id="toc-scope-and-limitations" class="nav-link" data-scroll-target="#scope-and-limitations">Scope and limitations</a></li>
-  <li><a href="#a-final-note" id="toc-a-final-note" class="nav-link" data-scroll-target="#a-final-note">A final note</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/CaribData/redcap-operations-book/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CaribData/redcap-operations-book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
 </nav>
@@ -304,7 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">19 Jan 2026</p>
+      <p class="date">8 Feb 2026</p>
     </div>
   </div>
   
@@ -318,7 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This book is an operations and maintenance guide for the REDCap service available at The University of the West Indies, Cave Hill campus. In early 2026, the operations of this REDCap installation pass from the <a href="https://docs.caribdata.org/">CaribData</a> funded project to the Cave Hill campus. This book is provided to provide operational continuity.</p>
+<p>This book is an operations and maintenance guide for the REDCap service available at The University of the West Indies, Cave Hill campus. In early 2026, the operations of this REDCap installation passed from the <a href="https://docs.caribdata.org/">CaribData</a> funded project to the Cave Hill campus. The purpose of this book is to provide operational continuity.</p>
 <p>REDCap is at heart an online data collection platform. In practice though it is much more—it is an institutional service that supports research governance, ethics, data protection, and day-to-day academic work. When it runs quietly, nobody notices. When it fails, the consequences are immediate and visible. This guide documents how the service is actually run, with less information on how it is built and configured.</p>
 <p>So the focus here is operational: routine tasks, decision points, risks, and recovery. The intent is not to explain how REDCap works for end users, nor to replicate official REDCap documentation. Instead, this guide captures the local knowledge required to keep the service stable, compliant, and trustworthy over time.</p>
 </section>
@@ -354,10 +352,6 @@ Note
 <p>This is a static site built using <a href="https://quarto.org/">Quarto</a> and hosted via <a href="https://docs.github.com/en/pages">GitHub Pages</a>. A basic knowledge of these systems will be needed to maintain the site. Those skills are not part of this handover document.</p>
 </div>
 </div>
-</section>
-<section id="a-final-note" class="level2">
-<h2 class="anchored" data-anchor-id="a-final-note">A final note</h2>
-<p>We view operational handover as a process, and this book is one part of that process. The original CaribData team - led by Professor Ian Hambleton - will remain available for questions going forwards.</p>
 
 
 <!-- -->
@@ -843,7 +837,7 @@ Note
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>This book is an operations and maintenance guide for the REDCap service available at The University of the West Indies, Cave Hill campus. In early 2026, the operations of this REDCap installation pass from the <span class="co">[</span><span class="ot">CaribData</span><span class="co">](https://docs.caribdata.org/)</span> funded project to the Cave Hill campus. This book is provided to provide operational continuity.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>This book is an operations and maintenance guide for the REDCap service available at The University of the West Indies, Cave Hill campus. In early 2026, the operations of this REDCap installation passed from the <span class="co">[</span><span class="ot">CaribData</span><span class="co">](https://docs.caribdata.org/)</span> funded project to the Cave Hill campus. The purpose of this book is to provide operational continuity.</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>REDCap is at heart an online data collection platform. In practice though it is much more---it is an institutional service that supports research governance, ethics, data protection, and day-to-day academic work. When it runs quietly, nobody notices. When it fails, the consequences are immediate and visible. This guide documents how the service is actually run, with less information on how it is built and configured.</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
@@ -873,11 +867,7 @@ Note
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>This is a static site built using <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org/)</span> and hosted via <span class="co">[</span><span class="ot">GitHub Pages</span><span class="co">](https://docs.github.com/en/pages)</span>. A basic knowledge of these systems will be needed to maintain the site. Those skills are not part of this handover document.</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">## A final note</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>We view operational handover as a process, and this book is one part of that process. The original CaribData team - led by Professor Ian Hambleton - will remain available for questions going forwards. </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

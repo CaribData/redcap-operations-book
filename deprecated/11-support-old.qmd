@@ -7,7 +7,7 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
-## Introduction  
+## Introduction 
 
 This section describes how support for the UWI REDCap service is provided, including how requests are handled, triaged, and escalated.
 
@@ -45,12 +45,11 @@ These requests relate to project-level governance and configuration, including:
 
 - approval of new projects;
 - moving projects from development to production;
-- committing design changes made in production;
 - approving project copies or deletions;
 - managing user permissions and roles;
 - approving API access or external modules.
 
-These requests require more judgement. They may have governance or data protection implications, and the administrator must also ensure that each new project includes a minimum level of project-level metadata. This metadata is requested by the system when users are completing a new project request - however, some metadata fields are optional and free text. Administrator metadata review is necessary.  
+These requests require more judgement. They may have governance or data protection implications, and teh administrator must also ensure that each new project projects a minimum level of project-level metadata. This metadata is requested by the system when users are completing a new project request - however, some metadata fields are optional and free text. Administrator metadata review is necessary.  
 
 ### Technical and system-related support
 
@@ -60,8 +59,6 @@ A smaller number of requests involve more technical issues, such as:
 - errors triggered by server security rules;
 - mobile app synchronisation issues;
 - issues following REDCap version upgrades.
-
-At times, an administrator may need to replicate the problem to identify and resolve the issue. To maintain the highest level of data protection, permission from the project owner should be sought and granted prior to proceeding with access to the project and accessing data within the project should be avoided where possible.
 
 Where issues relate to infrastructure or server configuration, they are escalated to the hosting provider. The current server providers (HIPAA-Vault) have generally been highly responsive to our server-related questions. 
 
@@ -86,9 +83,6 @@ Password resets are required when users cannot log in or did not receive their o
 4. Advise the user to check inbox and spam or quarantine folders.
 
 If the user does not receive the email, verify outbound email configuration and consider institutional mail filtering.
-
-### Self-reset Option
-A user can reset their own password via the login page by clicking the 'Forgot your password?' link.
 
 ### Extending or resetting a user account expiration date
 
@@ -170,7 +164,7 @@ Approval implies that [baseline governance expectations](./30-security.qmd) have
 
 Projects must be reviewed before moving from development to production. Best practice dictates that projects should only be moved to Production once the database has been designed and carefully tested. Reverting a project to Development after data-entry has started risks data loss.
 
-**Breadcrumb (project owner initiates)**  
+**Breadcrumb (project initiates)**  
 `Project → Setup → Move project to Production`
 
 **Breadcrumb (administrator approves)**  
@@ -183,9 +177,6 @@ Projects must be reviewed before moving from development to production. Best pra
 3. Approve the move and document the action if non-routine.
 
 Production status has audit and governance implications and should not be reversed lightly.
-
-### Delete/Keep Data
-When a project owner initiates a move to production they are asked whether to **keep** or **delete** all data. If a project owner selects 'Delete all data' then once the administrator approves the move to production, the data cannot be recovered.
 
 ### Approving API tokens
 

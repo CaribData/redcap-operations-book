@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ian R Hambleton">
-<meta name="dcterms.date" content="2026-01-19">
 
 <title>5&nbsp; REDCap Emails – REDCap at UWI Cave Hill</title>
 <style>
@@ -253,7 +252,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./90-templates.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Useful Templates</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard REDCap Wording for Re-Use</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -273,7 +272,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">5.1</span> Introduction</a></li>
   <li><a href="#role-of-email-in-redcap" id="toc-role-of-email-in-redcap" class="nav-link" data-scroll-target="#role-of-email-in-redcap"><span class="header-section-number">5.2</span> Role of email in REDCap</a></li>
   <li><a href="#universal-from-address-considerations" id="toc-universal-from-address-considerations" class="nav-link" data-scroll-target="#universal-from-address-considerations"><span class="header-section-number">5.3</span> Universal FROM address considerations</a></li>
-  <li><a href="#governance-and-risk-management" id="toc-governance-and-risk-management" class="nav-link" data-scroll-target="#governance-and-risk-management"><span class="header-section-number">5.4</span> Governance and risk management</a></li>
+  <li><a href="#governance-and-risk-management" id="toc-governance-and-risk-management" class="nav-link" data-scroll-target="#governance-and-risk-management"><span class="header-section-number">5.4</span> Governance and risk management</a>
+  <ul class="collapse">
+  <li><a href="#redcap-messenger" id="toc-redcap-messenger" class="nav-link" data-scroll-target="#redcap-messenger"><span class="header-section-number">5.4.1</span> REDCap Messenger</a></li>
+  </ul></li>
   <li><a href="#testing-and-change-management" id="toc-testing-and-change-management" class="nav-link" data-scroll-target="#testing-and-change-management"><span class="header-section-number">5.5</span> Testing and change management</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/CaribData/redcap-operations-book/edit/main/12-email.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CaribData/redcap-operations-book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -305,7 +307,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">19 Jan 2026</p>
+      <p class="date">8 Feb 2026</p>
     </div>
   </div>
   
@@ -339,6 +341,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Email should always be treated as an insecure communication channel. As such, sensitive personal or health data <strong>must never be included</strong> in email bodies or attachments.</p>
 <p>Project-level alerts and survey invitations should reference records using identifiers rather than names, and project teams should be reminded of these constraints during project approval.</p>
 <p>These practices align with both Vanderbilt guidance and the security assumptions of the hosting environment.</p>
+<section id="redcap-messenger" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="redcap-messenger"><span class="header-section-number">5.4.1</span> REDCap Messenger</h3>
+<p>When users would like to communicate on a secure channel, they can use the built-in REDCap Messenger feature found on the ‘My Projects’ page or within the project.</p>
+</section>
 </section>
 <section id="testing-and-change-management" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="testing-and-change-management"><span class="header-section-number">5.5</span> Testing and change management</h2>
@@ -860,11 +866,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>These practices align with both Vanderbilt guidance and the security assumptions of the hosting environment.</span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Testing and change management</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Any change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project. It is highly recommended that these changes be tested on the *development server* before making the change on the *production server*. </span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Email issues are often invisible until users report failures, so short-term monitoring after changes is essential to ensure continuity of service.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### REDCap Messenger</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>When users would like to communicate on a secure channel, they can use the built-in REDCap Messenger feature found on the 'My Projects' page or within the project.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Testing and change management</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Any change to email configuration should be followed by systematic testing, including account notifications, survey invitations, and alerts from a test project. It is highly recommended that these changes be tested on the *development server* before making the change on the *production server*. </span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Email issues are often invisible until users report failures, so short-term monitoring after changes is essential to ensure continuity of service.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://caribdata.github.io/redcap-operations-book/index.html</loc>
-    <lastmod>2026-01-19T11:59:02.263Z</lastmod>
+    <loc>https://caribdata.github.io/redcap-operations-book/10-admin.html</loc>
+    <lastmod>2026-02-08T15:24:39.055Z</lastmod>
   </url>
   <url>
     <loc>https://caribdata.github.io/redcap-operations-book/01-service.html</loc>
-    <lastmod>2026-01-19T14:10:36.506Z</lastmod>
-  </url>
-  <url>
-    <loc>https://caribdata.github.io/redcap-operations-book/10-admin.html</loc>
-    <lastmod>2026-01-19T15:14:17.754Z</lastmod>
+    <lastmod>2026-02-08T15:22:10.087Z</lastmod>
   </url>
   <url>
     <loc>https://caribdata.github.io/redcap-operations-book/11-support.html</loc>
-    <lastmod>2026-01-19T16:01:00.159Z</lastmod>
+    <lastmod>2026-02-08T15:32:51.732Z</lastmod>
   </url>
   <url>
     <loc>https://caribdata.github.io/redcap-operations-book/12-email.html</loc>
-    <lastmod>2026-01-19T16:04:55.877Z</lastmod>
+    <lastmod>2026-02-08T15:34:36.000Z</lastmod>
   </url>
   <url>
     <loc>https://caribdata.github.io/redcap-operations-book/20-maintenance.html</loc>
-    <lastmod>2026-01-19T16:58:01.416Z</lastmod>
+    <lastmod>2026-02-08T15:38:26.905Z</lastmod>
   </url>
   <url>
     <loc>https://caribdata.github.io/redcap-operations-book/21-backups.html</loc>
-    <lastmod>2026-01-19T17:00:43.642Z</lastmod>
+    <lastmod>2026-02-08T15:39:20.310Z</lastmod>
   </url>
   <url>
     <loc>https://caribdata.github.io/redcap-operations-book/30-security.html</loc>
-    <lastmod>2026-01-19T16:51:27.715Z</lastmod>
+    <lastmod>2026-02-08T15:41:18.026Z</lastmod>
   </url>
   <url>
     <loc>https://caribdata.github.io/redcap-operations-book/40-checklists.html</loc>
@@ -42,6 +38,10 @@
   </url>
   <url>
     <loc>https://caribdata.github.io/redcap-operations-book/91-links.html</loc>
-    <lastmod>2026-01-19T17:08:04.691Z</lastmod>
+    <lastmod>2026-02-08T15:42:50.044Z</lastmod>
+  </url>
+  <url>
+    <loc>https://caribdata.github.io/redcap-operations-book/index.html</loc>
+    <lastmod>2026-02-08T15:44:11.202Z</lastmod>
   </url>
 </urlset>

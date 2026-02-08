@@ -22,7 +22,7 @@ These are the primary sources for understanding REDCap functionality, updates, a
 |REDCap Consortium home |[https://projectredcap.org/](https://projectredcap.org/)|
 |Official documentation and resources|[https://projectredcap.org/resources/](https://projectredcap.org/resources/)|
 |How to cite REDCap|[https://projectredcap.org/resources/citations/](https://projectredcap.org/resources/citations/)|
-|REDCap community (login required)| [https://redcap.vumc.org/community/](https://redcap.vumc.org/community/)|
+|REDCap community (login required)| [https://redcap.vanderbilt.edu/community/](https://redcap.vanderbilt.edu/community/)|
 
 
 
@@ -40,7 +40,7 @@ These are the authoritative access points for the UWI installation.
 
 | Description | Link |
 | --- | --- |
-|REDCap login URL|[https://caribdata.org/redcap/](https://caribdata.org/redcap/)| ***[JC comment: this link was missing a closing bracket which I've added in.]{style="color: red"}***
+|REDCap login URL|[https://caribdata.org/redcap/](https://caribdata.org/redcap/|
 |REDCap support contact|[redcap@cavehill.uwi.edu](mailto:redcap@cavehill.uwi.edu)|
 
 

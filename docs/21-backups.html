@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ian R Hambleton">
-<meta name="dcterms.date" content="2026-01-19">
 
 <title>7&nbsp; System Backups – REDCap at UWI Cave Hill</title>
 <style>
@@ -253,7 +252,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./90-templates.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Useful Templates</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard REDCap Wording for Re-Use</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -273,7 +272,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">7.1</span> Introduction</a></li>
   <li><a href="#infrastructure-level-backups" id="toc-infrastructure-level-backups" class="nav-link" data-scroll-target="#infrastructure-level-backups"><span class="header-section-number">7.2</span> Infrastructure-level backups</a></li>
   <li><a href="#application-level-safeguards-in-redcap" id="toc-application-level-safeguards-in-redcap" class="nav-link" data-scroll-target="#application-level-safeguards-in-redcap"><span class="header-section-number">7.3</span> Application-level safeguards in REDCap</a></li>
-  <li><a href="#project-level-data-exports" id="toc-project-level-data-exports" class="nav-link" data-scroll-target="#project-level-data-exports"><span class="header-section-number">7.4</span> Project-level data exports</a></li>
+  <li><a href="#project-level-data-and-project-exports" id="toc-project-level-data-and-project-exports" class="nav-link" data-scroll-target="#project-level-data-and-project-exports"><span class="header-section-number">7.4</span> Project-level data and project exports</a></li>
   <li><a href="#recovery-scenarios" id="toc-recovery-scenarios" class="nav-link" data-scroll-target="#recovery-scenarios"><span class="header-section-number">7.5</span> Recovery scenarios</a></li>
   <li><a href="#testing-and-assurance" id="toc-testing-and-assurance" class="nav-link" data-scroll-target="#testing-and-assurance"><span class="header-section-number">7.6</span> Testing and assurance</a></li>
   <li><a href="#end-of-service-considerations" id="toc-end-of-service-considerations" class="nav-link" data-scroll-target="#end-of-service-considerations"><span class="header-section-number">7.7</span> End-of-service considerations</a></li>
@@ -307,7 +306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">19 Jan 2026</p>
+      <p class="date">8 Feb 2026</p>
     </div>
   </div>
   
@@ -332,9 +331,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="7.3" class="anchored" data-anchor-id="application-level-safeguards-in-redcap"><span class="header-section-number">7.3</span> Application-level safeguards in REDCap</h2>
 <p>REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports. These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.</p>
 </section>
-<section id="project-level-data-exports" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="project-level-data-exports"><span class="header-section-number">7.4</span> Project-level data exports</h2>
-<p>Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements. Regular project-level data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely (think encrypted) outside the REDCap environment.</p>
+<section id="project-level-data-and-project-exports" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="project-level-data-and-project-exports"><span class="header-section-number">7.4</span> Project-level data and project exports</h2>
+<p>Project teams are responsible for exporting and retaining copies of their own data and projects in accordance with institutional policies and research governance requirements. Regular project-level data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely (think encrypted) outside the REDCap environment.</p>
 <p>Administrators should remind project owners that REDCap is a live system, not a long-term archival solution.</p>
 </section>
 <section id="recovery-scenarios" class="level2" data-number="7.5">
@@ -853,9 +852,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports. These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project-level data exports</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project-level data and project exports</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements. Regular project-level data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely (think encrypted) outside the REDCap environment. </span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Project teams are responsible for exporting and retaining copies of their own data and projects in accordance with institutional policies and research governance requirements. Regular project-level data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely (think encrypted) outside the REDCap environment. </span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Administrators should remind project owners that REDCap is a live system, not a long-term archival solution.</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>

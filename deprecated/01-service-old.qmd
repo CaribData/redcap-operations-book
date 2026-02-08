@@ -13,7 +13,7 @@ This document describes the REDCap service operated for The University of the We
 
 REDCap is a secure, web-based data capture platform developed and licensed by Vanderbilt University under a non-profit end-user licence agreement. UWI participates in the REDCap Consortium and operates REDCap in accordance with [Vanderbilt’s licensing terms](https://projectredcap.org/join/termsofuse/), governance expectations, and community standards.
 
-The UWI REDCap instance has been project-managed by the [CaribData project](https://docs.caribdata.org/) and hosted on dedicated infrastructure provided by [HIPAA-Vault](https://www.hipaavault.com/).
+The UWI REDCap instance has been project-managed by the [CaribData project](docs.caribdata.org) and hosted on dedicated infrastructure provided by [HIPAA-Vault](hipaavault.com) .
 
 ## What the service provides
 

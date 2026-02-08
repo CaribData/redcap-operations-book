@@ -21,9 +21,9 @@ HIPAA Vault provides infrastructure-level backups and snapshots as part of its h
 
 REDCap includes built-in safeguards that support data integrity, including audit logs, change tracking, and controlled data exports. These features support transparency and traceability but do not replace backups. They are most useful for understanding what changed and when, rather than for restoring lost data.
 
-## Project-level data and project exports
+## Project-level data exports
 
-Project teams are responsible for exporting and retaining copies of their own data and projects in accordance with institutional policies and research governance requirements. Regular project-level data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely (think encrypted) outside the REDCap environment. 
+Project teams are responsible for exporting and retaining copies of their own data in accordance with institutional policies and research governance requirements. Regular project-level data exports are the most reliable way for projects to ensure continuity, particularly for long-running studies or operational systems. Exports should be stored securely (think encrypted) outside the REDCap environment. 
 
 Administrators should remind project owners that REDCap is a live system, not a long-term archival solution.
 

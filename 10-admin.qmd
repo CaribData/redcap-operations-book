@@ -7,7 +7,7 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
-## Introduction 
+## Introduction
 
 This section describes how user access and REDCap projects are administered for the University of the West Indies (UWI) REDCap service.
 
